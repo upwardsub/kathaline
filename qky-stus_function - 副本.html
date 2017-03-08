@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<link rel="stylesheet" href="style/weui.css"/>
+<link rel="stylesheet" href="style/weui2.css"/>
+<link rel="stylesheet" href="style/nav_left.css"/>
+<link rel="stylesheet" href="style/qky_stus.css"/>
+<link rel="stylesheet" type="text/css" href="icon_font/iconfont.css"/>
+<script src="js/zepto.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+	(function(){
+		var _btn  = document.querySelector(".btn-slide-bar"),
+			_body = document.querySelector("body");
+			_btn.onclick = function(){
+				_body.classList.toggle("active");
+			}
+	})(window)
+},false);
+</script>
+</head>
+
+<body ontouchstart>
+	<section class="slide-bar f14 f-white">
+       <div class="mar_tb15 pad_b15 upic_borb">
+         <div class="roles_pic weui_media_box weui_media_appmsg center">
+         <img class="weui_media_appmsg_thumb" src="images/teacher_tx.jpg" alt="">
+         </div>
+         <p class="tcenter mar_tb10"><span class="mar_r15">王牧之</span>教师</p>
+       </div>
+	   <ul class="pad_tb10">
+			<li><span class="icon icon-iconfontyonghu1  middle mar_r10"></span>学生信息</li>
+			<li><span class="icon icon-126  middle mar_r10"></span>切换身份</li>
+			<li><span class="icon icon-icon  middle mar_r10"></span>关于我们</li>
+			<li><span class="icon icon-weixin  middle mar_r10"></span>返回微信</li>
+	   </ul>
+	</section>
+
+      <div class="weui_btn_primary weui-header"> 
+          <div class="weui-header-left"> <a class="icon icon-list btn-slide-bar"></a>  </div>
+          <h1 class="weui-header-title">功能首页</h1>
+           
+      </div>
+       <div class="weui_panel weui_panel_access">
+            <div class="weui_panel_bd">
+                <a href="javascript:void(0);" class="weui_panel_ft weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <span class="icon icon-27 f45 middle f-green"></span>
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">学生评价</h4>
+                        <p class="weui_media_desc"><span>日常评价</span><em class="mar_r15 pad_r15 weui-border-r"></em><span>评价统计</span></p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui_panel_ft weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <span class="icon icon-jiankang f45 middle f-red"></span>
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">体质健康</h4>
+                        <p class="weui_media_desc"><span>体育测试</span><em class="mar_r15 pad_r15 weui-border-r"></em><span>体检报告</span></p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui_panel_ft weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <span class="icon icon-rongyu f45 middle f-orange"></span>
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">个人荣誉</h4>
+                        <p class="weui_media_desc"><span>荣誉申报</span><em class="mar_r15 pad_r15 weui-border-r"></em><span>荣誉信息</span></p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui_panel_ft weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <span class="icon icon-plus-datareport f45 middle f-blue"></span>
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">学期报告书</h4>
+                        <p class="weui_media_desc"><span>综合报告</span><em class="mar_r15 pad_r15 weui-border-r"></em><span>历史报告</span></p>
+                    </div>
+                </a>
+                
+            </div>
+        </div>    
+           
+</body>
+</html>
