@@ -6,3 +6,5 @@
 
 /*s身份选择*/
 .roles_pic{ padding:3px; background:#fff; width:60px; height:60px;}
+/*下拉菜单*/
+.class_checks{position:absolute;top:44px; height:auto; width:100%; background:#fff;}

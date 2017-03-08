@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>学生综合素质评价</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<link rel="stylesheet" href="../css/weui.css"/>
+<link rel="stylesheet" href="../css/weui2.css"/>
+<link rel="stylesheet" href="../css/nav_left.css"/>
+<link rel="stylesheet" href="../css/qky_stus.css"/>
+<link rel="stylesheet" type="text/css" href="../icon_font/iconfont.css"/>
+<script src="../js/zepto.min.js"></script>
+ <script type="text/javascript">
+function selectmenu(n){
+var eleMore = document.getElementById("menu_"+n);
+if(eleMore.style.display=="none"){
+eleMore.style.display = 'block';
+$("#cell_"+n).removeClass("icon-74");
+$("#cell_"+n).addClass("icon-035 ");
+}else{
+eleMore.style.display = 'none';
+$("#cell_"+n).removeClass("icon-035");
+$("#cell_"+n).addClass("icon-74");
+}
+}
+</script> 
+<script>
+  $(function(){
+	  $('.js-category').click(function(){
+			$parent = $(this).parent('li');
+		   if($parent.hasClass('js-show')){
+                        $parent.removeClass('js-show');
+                        $(this).children('i').removeClass('icon-035').addClass('icon-74');
+                    }else{
+                        $parent.siblings().removeClass('js-show');
+                        $parent.addClass('js-show');
+                        $(this).children('i').removeClass('icon-74').addClass('icon-035');
+                         $parent.siblings().find('i').removeClass('icon-035').addClass('icon-74');
+                    }
+		  });
+	  
+	  });    
+      
+</script>
+<script>
+        function upDownOperation(element)
+    {
+        var _input = element.parent().find('input'),
+            _value = _input.val(),
+            _step = _input.attr('data-step') || 1;
+        //检测当前操作的元素是否有disabled，有则去除
+        element.hasClass('disabled') && element.removeClass('disabled');
+        //检测当前操作的元素是否是操作的添加按钮（.input-num-up）‘是’ 则为加操作，‘否’ 则为减操作
+        if ( element.hasClass('weui-number-plus') )
+        {
+            var _new_value = parseInt( parseFloat(_value) + parseFloat(_step) ),
+                _max = _input.attr('data-max') || false,
+                _down = element.parent().find('.weui-number-sub');
+            
+            //若执行‘加’操作且‘减’按钮存在class='disabled'的话，则移除‘减’操作按钮的class 'disabled'
+            _down.hasClass('disabled') && _down.removeClass('disabled');
+            if (_max && _new_value >= _max) {
+                _new_value = _max;
+                element.addClass('disabled');
+            }
+        } else {
+            var _new_value = parseInt( parseFloat(_value) - parseFloat(_step) ),
+                _min = _input.attr('data-min') || false,
+                _up = element.parent().find('.weui-number-plus');
+            //若执行‘减’操作且‘加’按钮存在class='disabled'的话，则移除‘加’操作按钮的class 'disabled'
+            _up.hasClass('disabled') && _up.removeClass('disabled');
+            if (_min && _new_value <= _min) {
+                _new_value = _min;
+                element.addClass('disabled');
+            }
+        }
+        _input.val( _new_value );
+    }
+	  
+	     
+  $(function(){
+$('.weui-number-plus').click(function(){
+        upDownOperation( $(this) );
+    });
+    $('.weui-number-sub').click(function(){
+        upDownOperation( $(this) );
+    });
+ 
+ //评分js
+ var arr = ["1分","2分","3分","4分","5分"];
+	var num = -1;
+	$(".weui-rater a").mouseover(function(){
+		var thisL = $(this).index();
+		for(var i = 0;i < thisL;i++){
+			$(".weui-rater a").eq(i).addClass('checked');
+		}
+		for(var i = thisL; i < 5;i++){
+			$(".weui-rater a").eq(i).removeClass('checked');
+		}
+		$(this).addClass('checked');
+	})
+	$(".weui-rater a").mouseout(function(){
+		var thisL = $(this).index();
+		for(var i = thisL; i < 5;i++){
+			$(".weui-rater a").eq(i).removeClass('checked');
+		}
+	})
+	$(".weui-rater").mouseout(function(){
+		
+		for(var i = 0; i < num;i++){
+			$(".weui-rater a").eq(i).addClass('checked');
+		}
+	})
+  $(".weui-rater a").click(function(){
+		var thisL = $(this).index();
+		$("#fen").html(arr[thisL]);
+		$(this).addClass('checked');
+		num = thisL+1;
+		console.log(num);
+	})
+	
+ });      
+      </script>
+   
+</head>
+
+<body ontouchstart>
+	
+
+      <div class="weui_btn_primary weui-header z-ind1000"> 
+          <div class="weui-header-left"> <a class="icon icon-gncaidan f20 btn-slide-bar"></a>  </div>
+          <h1 class="weui-header-title" onclick="selectmenu('1');">一年级（2）班<i id="cell_1" class="icon icon-74 f-green"></i></h1>
+           
+      </div>
+     <div class="weui_msg_img hide" id="menu_1" style="display:none;">
+    <div class="class_checks weui-border-tb tleft">
+      <div class="page-bd">  
+               <ul>
+               
+                  <li class="js-show weui-border-b">
+                      <div class="weui-flex js-category">
+                          <p class="weui-flex-item">一年级</p>
+                          <i class="icon icon-74"></i>
+                      </div>
+                      <div class="page-category js-categoryInner">
+                      
+                        <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                            <label class="weui_cell weui_check_label" for="x11">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>（1）班</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" class="weui_check" name="radio1" id="x11">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                            <label class="weui_cell weui_check_label" for="x12">
+                
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>（2）班</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" name="radio1" class="weui_check" id="x12" checked="checked">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                                 <label class="weui_cell weui_check_label" for="x13">
+                
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>（3）班</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" name="radio1" class="weui_check" id="x13">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                        </div>
+                      </div>
+                  </li>
+                   <li class="weui-border-b">
+                      <div class="weui-flex js-category">
+                          <p class="weui-flex-item">二年级</p>
+                          <i class="icon icon-74"></i>
+                      </div>
+                      <div class="page-category js-categoryInner">
+                      
+                        <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                            <label class="weui_cell weui_check_label" for="x14">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>（1）班</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" class="weui_check" name="radio1" id="x14">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                            <label class="weui_cell weui_check_label" for="x15">
+                
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>（2）班</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" name="radio1" class="weui_check" id="x15">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                                 <label class="weui_cell weui_check_label" for="x16">
+                
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>（3）班</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" name="radio1" class="weui_check" id="x16">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                        </div>
+                          
+                      </div>
+                  </li>           
+                  <li class="weui-border-b">
+                      <div class="weui-flex js-category">
+                          <p class="weui-flex-item">三年级</p>
+                          <i class="icon icon-74"></i>
+                      </div>
+                      <div class="page-category js-categoryInner">
+                        <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                            <label class="weui_cell weui_check_label" for="x17">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>（1）班</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" class="weui_check" name="radio1" id="x17">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                            <label class="weui_cell weui_check_label" for="x18">
+                
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>（2）班</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" name="radio1" class="weui_check" id="x18">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                                 <label class="weui_cell weui_check_label" for="x19">
+                
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>（3）班</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" name="radio1" class="weui_check" id="x19">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                        </div>
+                          
+                      </div>
+                  </li>            
+           </ul>
+          </div>
+    </div>
+    </div>
+    <div class="weui_cells weui_cells_form ">    
+      <div class="weui_cell">
+       <div class="weui_cell_bd weui_cell_primary"> <p>二级指标</p> </div>
+        <div style="font-size: 0px;" class="weui_cell_ft">
+         <a class="weui-number weui-number-sub needsclick">-</a>
+         <input pattern="[0-9]*" class="weui-number-input" style="width: 50px;" value='0'  data-min="0" data-max="10" data-step="1">
+          <a class="weui-number weui-number-plus needsclick">+</a> 
+          </div> <div class="weui_cell_ft" style="display: none;"> 0 </div> </div>
+      <div class="weui_cell">
+       <div class="weui_cell_bd weui_cell_primary"> <p>二级指标</p> </div>
+        <div style="font-size: 0px;" class="weui_cell_ft">
+         <a class="weui-number weui-number-sub needsclick">-</a>
+         <input pattern="[0-9]*" class="weui-number-input" style="width: 50px;" value='0'  data-min="0" data-max="10" data-step="1">
+          <a class="weui-number weui-number-plus needsclick">+</a> 
+          </div> <div class="weui_cell_ft" style="display: none;"> 0 </div> </div>
+    </div>
+       <div class="weui_btn_area">
+        <a id="formSubmitBtn" href="javascript:" class="weui_btn bg-green weui_btn_primary">提交</a>
+    </div>
+</body>
+</html>
