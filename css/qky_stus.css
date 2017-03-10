@@ -8,3 +8,19 @@
 .roles_pic{ padding:3px; background:#fff; width:60px; height:60px;}
 /*下拉菜单*/
 .class_checks{position:absolute;top:44px; height:auto; width:100%; background:#fff;}
+/*增减学生*/
+.weui-header .weui-header-title .weui_input{ width:auto !important;}
+.weui_reg_wrp .stus_del{right:0;}
+.weui_reg_wrp{float: left;position: relative; margin-right: 9px; margin-bottom: 9px;width:50px;height:50px;}
+.wh_40{ width:40px !important; height:40px !important;}
+.l40{ line-height:40px;}
+.weui_cell img{width: 100%; max-height: 100%;vertical-align: top;}
+.p2 .icon_g{ margin-right:30px;}
+.zmbox{ position:fixed; width:18px; top:0; right:0; padding:0 2 0 0; margin:58px 0 0 0; height:96%;}
+.zmbox .zm{ width:16px; display:block; height:16px; line-height:16px; margin-bottom:2px;font-size:12px; color:#999; text-align:center;-webkit-transition:all .4s ease;-moz-transition:all .4s ease;-o-transition:all .4s ease;transition:all .4s ease; }
+.zmbox .zm:hover{ transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2); background:#28ce57; color:#fff; border-radius:50%;}
+/*学生列表*/
+.stus_list{ width:100%;top:0; left:0; height:100%; background:#ebebeb;}
+.stus_list .weui_cells_checkbox .weui_cell{ padding-right:30px;}
+/*上传*/
+.weui_uploader_bd .weui_uploader_file{ margin:0 9px 9px 0;}
