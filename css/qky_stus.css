@@ -7,7 +7,8 @@
 /*s身份选择*/
 .roles_pic{ padding:3px; background:#fff; width:60px; height:60px;}
 /*下拉菜单*/
-.class_checks{position:absolute;top:44px; height:auto; width:100%; background:#fff;}
+.class_checks,.zb_checks{position:absolute;top:44px; height:auto; width:100%; background:#fff;}
+.zb_checks{top:40px;}
 /*增减学生*/
 .weui-header .weui-header-title .weui_input{ width:auto !important;}
 .weui_reg_wrp .stus_del{right:0;}
@@ -24,3 +25,6 @@
 .stus_list .weui_cells_checkbox .weui_cell{ padding-right:30px;}
 /*上传*/
 .weui_uploader_bd .weui_uploader_file{ margin:0 9px 9px 0;}
+/*二级指标评价*/
+/*.zb-mr{ padding-right:120px;}
+.zb-mr .weui_cell_ft{right:-120px;}*/
