@@ -34,14 +34,17 @@
 .l40{ line-height:40px;}
 .weui_cell img{width: 100%; max-height: 100%;vertical-align: top;}
 .p2 .icon_g{ margin-right:30px;}
-.zmbox{ position:fixed; width:18px; top:0; right:0; padding:0 2 0 0; margin:58px 0 0 0; height:96%;}
-.zmbox .zm{ width:16px; display:block; height:16px; line-height:16px; margin-bottom:2px;font-size:12px; color:#999; text-align:center;-webkit-transition:all .4s ease;-moz-transition:all .4s ease;-o-transition:all .4s ease;transition:all .4s ease; }
-.zmbox .zm:hover{ transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2); background:#28ce57; color:#fff; border-radius:50%;}
+
 /*学生列表*/
 .stus_list{ width:100%;top:0; left:0; height:100%; background:#ebebeb;}
 .stus_list .weui_cells_checkbox .weui_cell{ padding-right:30px;}
+.zmbox{ position:fixed; width:18px; top:0; right:0; padding:0 2 0 0; margin:58px 0 0 0; height:96%;}
+.zmbox .zm{ width:16px; display:block; height:16px; line-height:16px; margin-bottom:2px;font-size:12px; color:#999; text-align:center;-webkit-transition:all .4s ease;-moz-transition:all .4s ease;-o-transition:all .4s ease;transition:all .4s ease; }
+.zmbox .zm:hover{ transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2); background:#28ce57; color:#fff; border-radius:50%;}
 /*上传*/
 .weui_uploader_bd .weui_uploader_file{ margin:0 9px 9px 0;}
 /*二级指标评价*/
-/*.zb-mr{ padding-right:120px;}
-.zb-mr .weui_cell_ft{right:-120px;}*/
+.page-bd li.rel:first-child{ margin-top:-1px !important;}
+.page-bd li .js-category{ width:60%; padding:10px 0 10px 15px;}
+.page-bd li .l28{ height:28px; line-height:28px;}
+.page-bd li.rel .weui_cell .weui_cell_ft{right:10px;}
