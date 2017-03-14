@@ -12,27 +12,12 @@
 /*增减学生*/
 .weui-header .weui-header-title .weui_input{ width:auto !important;}
 .weui_uploader_file .stus_del{right:5px;}
-.weui_uploader_dele_wrp{    float: left;
-    position: relative;
-    margin-right: 9px;
-    margin-bottom: 9px;
-    width: 77px;
-    height: 77px;
-    border: 1px solid #d9d9d9;}
-.weui_uploader_dele_wrp:after{width: 39.5px;
-    height: 2px;
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    background-color: #d9d9d9;
-}
+.weui_uploader_dele_wrp{ float: left; position: relative; margin-right: 9px; margin-bottom: 9px; width:58px; height:58px; border: 1px solid #d9d9d9;}
+.weui_uploader_dele_wrp:after{width: 39.5px; height: 2px; content: " "; position: absolute;top: 50%;left: 50%; -webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);   background-color: #d9d9d9;}
 .wh_40{ width:40px !important; height:40px !important;}
-.wh_60{ width:60px !important; height:60px !important;}
+.wh_50{ width:50px !important; height:50px !important;}
 .l40{ line-height:40px;}
-.weui_cell img{width: 100%; max-height: 100%;vertical-align: top;}
+.weui_cell img{width: 100%;height: 100%;vertical-align: top;}
 .p2 .icon_g{ margin-right:30px;}
 
 /*学生列表*/
@@ -45,6 +30,13 @@
 .weui_uploader_bd .weui_uploader_file{ margin:0 9px 9px 0;}
 /*二级指标评价*/
 .page-bd li.rel:first-child{ margin-top:-1px !important;}
-.page-bd li .js-category{ width:60%; padding:10px 0 10px 15px;}
+.page-bd li .js-category.wid60{ width:60%; padding:10px 0 10px 15px;}
 .page-bd li .l28{ height:28px; line-height:28px;}
 .page-bd li.rel .weui_cell .weui_cell_ft{right:10px;}
+
+.weui_media_box.weui_media_text h2.abs{ right:30px;top:50px;}
+.weui_media_box.weui_media_text i.abs{ right:15px;top:15px;}
+.page-bd li:first-child.weui_panel_bd{ margin-top:12px;}
+.weui_uploader_files .weui_uploader_file {background-size:contain;}
+/*一级二级指标宽度*/
+.wlev01{max-width:112px;}.wlev02{max-width:140px;}.wlev01,.wlev02{ display:inline-block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
