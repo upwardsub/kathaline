@@ -383,6 +383,9 @@ input.bg-orange-b {
 .bg-gray {
   background-color: #e0e0e0;
 }
+.bg-gray01 {
+  background-color: #f9f9f9 !important;
+}
 /*字体大小 生成11-32 35 40 45 50 55 60像素字体 */
 .f11 {
   font-size: 11px !important;
