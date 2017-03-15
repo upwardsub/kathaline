@@ -51,3 +51,6 @@
 @media ( min-device-width:380px ) and ( max-width:414px ){.wlev01{max-width:160px;}.wlev02{max-width:170px;}.weui_media_box.weui_media_text h2.abs.f29{ font-size:40px !important;}}
 @media ( min-device-width:415px ){.wlev01{max-width:auto;}.wlev02{max-width:auto;}.weui_media_box.weui_media_text h2.abs.f29{ font-size:40px !important;}}
 .wlev01,.wlev02{ display:inline-block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+/*统计-分数*/
+.weui_media_box.weui_media_text  .weui_tabbar:before{ border:none;}
+.weui_media_box.weui_media_text  .weui_tabbar .weui_tabbar_icon{ width:90%; text-align:center;}
