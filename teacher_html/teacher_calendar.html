@@ -9,309 +9,181 @@
 <link rel="stylesheet" href="../css/qky_grow.css"/>
 <link rel="stylesheet" type="text/css" href="../icon_font/iconfont.css"/>
 <script src="../js/zepto.min.js"></script>
-<!--下拉收起-->
-<script type="text/javascript">
-function selectmenu(n){
-var eleMore = document.getElementById("menu_"+n);
-if(eleMore.style.display=="none"){
-eleMore.style.display = 'block';
-$("#cell_"+n).removeClass("icon-zhankaijiantou");
-$("#cell_"+n).addClass("icon-shouqijiantou ");
-}else{
-eleMore.style.display = 'none';
-$("#cell_"+n).removeClass("icon-shouqijiantou");
-$("#cell_"+n).addClass("icon-zhankaijiantou");
-}
-}
-$(function(){
-	  $('.js-category').click(function(){
-			$parent = $(this).parent('li');
-		   if($parent.hasClass('js-show')){
-                        $parent.removeClass('js-show');
-                        $(this).children('i').removeClass('icon-shouqijiantou').addClass('icon-zhankaijiantou');
-                    }else{
-                        $parent.siblings().removeClass('js-show');
-                        $parent.addClass('js-show');
-                        $(this).children('i').removeClass('icon-zhankaijiantou').addClass('icon-shouqijiantou');
-                         $parent.siblings().find('i').removeClass('icon-shouqijiantou').addClass('icon-zhankaijiantou');
-                    }
-		  });
-	  
-	  });    
-</script>
 </head>
 
 <body ontouchstart>
-	
-
-      <div class="weui_btn_primary weui-header z-ind1000"> 
+<div class="div_calendar">
+      <div class="weui_btn_primary weui-header"> 
           <div class="weui-header-left"> <a href="teacher_evaluate.html" class="icon icon-109 f20 btn-slide-bar"></a>  </div>
-          <h1 class="weui-header-title"  onclick="selectmenu('1');">2017-03-13<i id="cell_1" class="icon icon-zhankaijiantou f14 mar_l5 f-green"></i></h1>
+          <h1 class="weui-header-title">日历选择</h1>
       </div>
-      <div id="menu_3" style="display:none;">
-          <div class="searchbar_wrap">
-          </div>
+	
+     <div class=" weui_cells">
+      <div class="weui_btn_primary weui-header bg_calendar01"> 
+          <div class="weui-header-left"> <a class="icon icon-gray_arrow_right f12 pad_t5 mar_r15 f-white"></a>  </div>
+          <h1 class="weui-header-title f-white">2017-03</h1>
+          <div class="weui-header-right"><a class="icon icon-gray_arrow_left f12 pad_t5 f-white"></a></div> 
       </div>
-    <div class="weui_cells">
+      
       <div class="weui_panel_bd ">
-        <div class="weui_media_box weui_media_text page-bd pad_tb15">
-              <div class="weui_cell_bd weui_cell_primary"><h4 class="weui_media_title mar_0 tcenter pad_tb5"><span class="f-black wlev01 l28">兴趣班（1）班</span></h4> </div>
-         
-              <div class="weui_tabbar bg-white rel">
-                  <span class="weui_tabbar_item">
-                      <div class="weui_tabbar_icon f-red f26">
-                          999
-                      </div>
-                      <p class="weui_tabbar_label">基础总分</p>
+              <div class="weui_tabbar bg_calendar02 rel">
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label f-white">日</p>
                   </span>
-                  <span class="weui_tabbar_item">
-                      <div class="weui_tabbar_icon f-blue f20">
-                          21
-                      </div>
-                      <p class="weui_tabbar_label">年级排名</p>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label f-white">一</p>
                   </span>
-                  <span class="weui_tabbar_item">
-                      <div class="weui_tabbar_icon f-blue f20">
-                         30
-                      </div>
-                      <p class="weui_tabbar_label">全校排名</p>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label f-white">二</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label f-white">三</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label f-white">四</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label f-white">五</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label f-white">六</p>
                   </span>
               </div>        
-         
-        </div>
+              <div class="weui_tabbar bg-white rel">
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label pre-month">26</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label pre-month">27</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label pre-month">28</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label weui-reddot-s">1</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label weui-reddot-s">2</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label weui-reddot-s">3</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">4</p>
+                  </span>
+              </div>        
+              <div class="weui_tabbar bg-white rel">
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">5</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">6</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">7</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">8</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label weui-reddot-s">9</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label weui-reddot-s">10</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label weui-reddot-s">11</p>
+                  </span>
+              </div>        
+              <div class="weui_tabbar bg-white rel">
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label weui-reddot-s">13</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label weui-reddot-s">14</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label weui-reddot-s">15</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label today">16</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">17</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <!--<p class="weui_tabbar_label b_hover">18</p>-->
+                      <p class="weui_tabbar_label">18</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">19</p>
+                  </span>
+              </div>        
+              <div class="weui_tabbar bg-white rel">
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">20</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">21</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">22</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">23</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">24</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">25</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">26</p>
+                  </span>
+              </div>        
+              <div class="weui_tabbar bg-white rel">
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">27</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">28</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">29</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">30</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label">31</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label next-month">1</p>
+                  </span>
+                  <span class="weui_tabbar_item page-bd">
+                      <p class="weui_tabbar_label next-month">2</p>
+                  </span>
+              </div>        
         
       </div>
-    </div>    
-    <div class="weui_cells weui_cells_form clear page-bd">   
-      
-      
-    <ul>
-      <li class="mar_0">
-        <div class="weui_cell js-category l28">
-           <i class="icon icon-zhankaijiantou mar_r5 f-999 f12"></i>
-           <div class="weui_cell_bd weui_cell_primary"> <p>日常评价</p> </div>
-            <div class="f-orange f18"> +10</div> 
-            <div class="weui_cell_ft"></div>
-        </div>
-
-        <div class="page-category js-categoryInner bg-gray01">
-                
-          <div class="weui_media_box weui_media_text weui-border-t">
-              <p class="weui_media_desc mar_b15">认真听课：<span class="f-blue f18">-2</span></p>
-              <p class="weui_media_desc mar_b5">课堂卫生：<span class="f-orange f18">+12</span></p>
-          </div>
-        </div>
-      </li>
-      <li class="mar_0 weui-border-t">
-        <div class="weui_cell js-category l28">
-           <i class="icon icon-zhankaijiantou mar_r5 f-999 f12"></i>
-           <div class="weui_cell_bd weui_cell_primary"> <p>日常评价</p> </div>
-            <div class="f-blue f18"> -10</div> 
-            <div class="weui_cell_ft"></div>
-        </div>
-
-        <div class="page-category js-categoryInner bg-gray01">
-                
-          <div class="weui_media_box weui_media_text weui-border-t">
-              <p class="weui_media_desc mar_b15">认真听课：<span class="f-blue f18">-12</span></p>
-              <p class="weui_media_desc mar_b5">课堂卫生：<span class="f-orange f18">+2</span></p>
-          </div>
-        </div>
-      </li>
-      <li class="mar_0 weui-border-t">
-        <div class="weui_cell js-category l28">
-           <i class="icon icon-zhankaijiantou mar_r5 f-999 f12"></i>
-           <div class="weui_cell_bd weui_cell_primary"> <p>日常评价</p> </div>
-            <div class="f-orange f18"> +10</div> 
-            <div class="weui_cell_ft"></div>
-        </div>
-
-        <div class="page-category js-categoryInner bg-gray01">
-                
-          <div class="weui_media_box weui_media_text weui-border-t">
-              <p class="weui_media_desc mar_b15">认真听课：<span class="f-blue f18">-2</span></p>
-              <p class="weui_media_desc mar_b5">课堂卫生：<span class="f-orange f18">+12</span></p>
-          </div>
-        </div>
-      </li>
-      <li class="mar_0 weui-border-t">
-        <div class="weui_cell js-category l28">
-           <i class="icon icon-zhankaijiantou mar_r5 f-999 f12"></i>
-           <div class="weui_cell_bd weui_cell_primary"> <p>日常评价</p> </div>
-            <div class="f-orange f18"> +10</div> 
-            <div class="weui_cell_ft"></div>
-        </div>
-
-        <div class="page-category js-categoryInner bg-gray01">
-                
-          <div class="weui_media_box weui_media_text weui-border-t">
-              <p class="weui_media_desc mar_b15">认真听课：<span class="f-blue f18">-2</span></p>
-              <p class="weui_media_desc mar_b5">课堂卫生：<span class="f-orange f18">+12</span></p>
-          </div>
-        </div>
-      </li>
-      <li class="mar_0 weui-border-t">
-        <div class="weui_cell js-category l28">
-           <i class="icon icon-zhankaijiantou mar_r5 f-999 f12"></i>
-           <div class="weui_cell_bd weui_cell_primary"> <p>日常评价</p> </div>
-            <div class="f-orange f18"> +10</div> 
-            <div class="weui_cell_ft"></div>
-        </div>
-
-        <div class="page-category js-categoryInner bg-gray01">
-                
-          <div class="weui_media_box weui_media_text weui-border-t">
-              <p class="weui_media_desc mar_b15">认真听课：<span class="f-blue f18">-2</span></p>
-              <p class="weui_media_desc mar_b5">课堂卫生：<span class="f-orange f18">+12</span></p>
-          </div>
-        </div>
-      </li>
-      <li class="mar_0 weui-border-t">
-        <div class="weui_cell js-category l28">
-           <i class="icon icon-zhankaijiantou mar_r5 f-999 f12"></i>
-           <div class="weui_cell_bd weui_cell_primary"> <p>日常评价</p> </div>
-            <div class="f-orange f18"> +10</div> 
-            <div class="weui_cell_ft"></div>
-        </div>
-
-        <div class="page-category js-categoryInner bg-gray01">
-                
-          <div class="weui_media_box weui_media_text weui-border-t">
-              <p class="weui_media_desc mar_b15">认真听课：<span class="f-blue f18">-2</span></p>
-              <p class="weui_media_desc mar_b5">课堂卫生：<span class="f-orange f18">+12</span></p>
-          </div>
-        </div>
-      </li>
-     </ul> 
 
     </div>
-
-<!--弹出日期班级--> 
-<div class="weui_msg_img hide abs" id="menu_1" style="display:none;">
-<div class="class_checks weui-border-tb tleft">
-    <div class="page-bd">  
-      <div class="weui_cells weui_cells_radio" >
-        <label class="weui_cell weui_check_label" for="x11">
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-01</p>
+    
+         <div class="weui_cells weui_panel weui_panel_access">
+            <div class="weui_panel_hd">备注：</div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_text">
+                    <p class="weui_media_desc"><span class="mar_lr5 bg-red iblock circle c_s"></span>上标代表已有评价状态样式</p>
+                </div>
+                <div class="weui_media_box weui_media_text">
+                    <p class="weui_media_desc"><span class=" iblock circle mar_lr5 bg-green"></span>背景代表当天日期</p>
+                </div>
+                <div class="weui_media_box weui_media_text">
+                    <p class="weui_media_desc"><span class=" iblock circle mar_lr5 b_hover"></span>背景代表选择非当天日期</p>
+                </div>
             </div>
-            <div class="weui_cell_ft">
-                <input type="radio" class="weui_check" name="radio1" id="x11">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-        <label class="weui_cell weui_check_label" for="x12">
-
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-02</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" name="radio1" class="weui_check" id="x12">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-             <label class="weui_cell weui_check_label" for="x13">
-
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-03</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" name="radio1" class="weui_check" id="x13" checked="checked">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-        <label class="weui_cell weui_check_label" for="x14">
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-04</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" class="weui_check" name="radio1" id="x14">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-        <label class="weui_cell weui_check_label" for="x15">
-
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-05</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" name="radio1" class="weui_check" id="x15">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-             <label class="weui_cell weui_check_label" for="x16">
-
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-06</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" name="radio1" class="weui_check" id="x16">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-        <label class="weui_cell weui_check_label" for="x17">
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-07</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" class="weui_check" name="radio1" id="x17">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-        <label class="weui_cell weui_check_label" for="x18">
-
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-08</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" name="radio1" class="weui_check" id="x18" >
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-             <label class="weui_cell weui_check_label" for="x19">
-
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-09</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" name="radio1" class="weui_check" id="x19">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-        <label class="weui_cell weui_check_label" for="x20">
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-10</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" class="weui_check" name="radio1" id="x20">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-        <label class="weui_cell weui_check_label" for="x21">
-
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-11</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" name="radio1" class="weui_check" id="x21">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-             <label class="weui_cell weui_check_label" for="x22">
-
-            <div class="weui_cell_bd weui_cell_primary">
-                <p>2017-12</p>
-            </div>
-            <div class="weui_cell_ft">
-                <input type="radio" name="radio1" class="weui_check" id="x22">
-                <span class="weui_icon_checked"></span>
-            </div>
-        </label>
-     </div>
-         
-    </div>
+        </div>       
 </div>
-</div>
-
 </body>
 </html>

@@ -54,3 +54,14 @@
 /*统计-分数*/
 .weui_media_box.weui_media_text  .weui_tabbar:before{ border:none;}
 .weui_media_box.weui_media_text  .weui_tabbar .weui_tabbar_icon{ width:90%; text-align:center;}
+/*日历*/
+.bg_calendar01{ background:#68a0f4;}.bg_calendar02{ background:#c3d9fb !important;}
+.div_calendar .weui_tabbar_item{ height:44px; line-height:44px;}.div_calendar .weui_tabbar_label{ font-size:14px}
+.div_calendar .weui_tabbar:before{ border-top:none;}
+.div_calendar .pre-month ,.div_calendar .next-month{ color:#cecece;}
+.div_calendar .today{ background:#28ce57; color:#fff;}.div_calendar .b_hover{ background:#f0f0f0;}
+.div_calendar .today,.div_calendar .b_hover{ width:44px; margin:0 auto;-moz-border-radius:50%; -webkit-border-radius:50%;border-radius:50%;}
+@media screen and ( max-width: 308px ) {.div_calendar p.weui_tabbar_label,.div_calendar .weui-reddot-s{ width:100%;}}
+@media ( min-device-width:309px ){.div_calendar p.weui_tabbar_label,.div_calendar .weui-reddot-s{ width:44px;}}
+.div_calendar p.weui_tabbar_label,.div_calendar .weui-reddot-s{ margin:0 auto;position: relative;display:block;line-height: 44px;  padding:0;}.div_calendar .weui-reddot-s:after {right:5px;top:13px;}
+.div_calendar .iblock.circle{ width:8px; height:8px;}
