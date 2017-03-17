@@ -65,3 +65,5 @@
 @media ( min-device-width:309px ){.div_calendar p.weui_tabbar_label,.div_calendar .weui-reddot-s{ width:44px;}}
 .div_calendar p.weui_tabbar_label,.div_calendar .weui-reddot-s{ margin:0 auto;position: relative;display:block;line-height: 44px;  padding:0;}.div_calendar .weui-reddot-s:after {right:5px;top:13px;}
 .div_calendar .iblock.circle{ width:8px; height:8px;}
+/*通用提示页面*/
+.nor-tips{font-size:100px; line-height:100px;}

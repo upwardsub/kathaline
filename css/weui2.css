@@ -340,6 +340,9 @@ a:active {
   color: rgba(255, 255, 255, 0.4);
   background-color: #596c96;
 } 
+.bg-green-b{ border:1px solid #28ce57; color: #28ce57;
+}
+
 .bg-blue-b {
   color: #596c96;
   border: 1px solid #596c96;
@@ -1850,7 +1853,7 @@ weui-box*/
 /*header*/
 .weui-header { height:44px; position: relative; -webkit-box-sizing: border-box;}
 .weui-header .weui-header-title,.weui-header h1 {
-  margin: 0 88px;
+  margin: 0 83px;
   margin-left: 100px;
   line-height: 44px;
   text-align: center;
