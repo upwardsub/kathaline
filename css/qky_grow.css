@@ -13,8 +13,11 @@
 /*s身份选择*/
 .roles_pic{ padding:3px; background:#fff; width:60px; height:60px;}
 /*下拉菜单*/
+.icon-zhankaijiantou,.icon-shouqijiantou{ color:#999; font-size:12px;}
 .class_checks,.zb_checks{position:absolute;top:44px; height:auto; width:100%; background:#fff;}
 .zb_checks{top:40px;}
+.class_checks .weui_check_label{ font-size:14px;}
+.class_checks .weui_check_label,.zb_checks .weui_check_label{ padding-left:25px;}
 /*增减学生*/
 .weui-header .weui-header-title .weui_input{ width:auto !important;}
 .weui_uploader_file .stus_del{right:5px;}
@@ -41,7 +44,7 @@
 .page-bd li.rel .weui_cell .weui_cell_ft{right:10px;}
 
 .weui_media_box.weui_media_text h2.abs{ right:30px;top:50px;}
-.weui_media_box.weui_media_text i.abs{ right:15px;top:15px;}
+.weui_media_box.weui_media_text i.abs{ right:15px;top:20px;}
 .page-bd li:first-child.weui_panel_bd{ margin-top:12px;}
 .weui_uploader_files .weui_uploader_file {background-size:contain;}
 /*一级二级指标宽度*/
@@ -67,3 +70,7 @@
 .div_calendar .iblock.circle{ width:8px; height:8px;}
 /*通用提示页面*/
 .nor-tips{font-size:100px; line-height:100px;}
+
+/*学生身份 -评价*/
+.wb_arrow{ border-right: 1px solid #e0e0e0; border-top: 1px solid #e0e0e0; height:8px;width: 8px; margin:50px auto 0; transform: rotate(-135deg);-webkit-transform: rotate(-135deg);border-left:8px solid #fff; border-bottom:8px solid #fff;}
+.weui_tabbar_item.rel .wb_arrow{ right:-10px; top:-25px;}
