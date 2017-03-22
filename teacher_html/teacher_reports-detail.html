@@ -9,246 +9,145 @@
 <link rel="stylesheet" href="../css/qky_grow.css"/>
 <link rel="stylesheet" type="text/css" href="../icon_font/iconfont.css"/>
 <script src="../js/zepto.min.js"></script>
-<!--下拉收起-->
-<script type="text/javascript">
-function selectmenu(n){
-var eleMore = document.getElementById("menu_"+n);
-if(eleMore.style.display=="none"){
-eleMore.style.display = 'block';
-$("#cell_"+n).removeClass("icon-zhankaijiantou");
-$("#cell_"+n).addClass("icon-shouqijiantou ");
-}else{
-eleMore.style.display = 'none';
-$("#cell_"+n).removeClass("icon-shouqijiantou");
-$("#cell_"+n).addClass("icon-zhankaijiantou");
-}
-}
-$(function(){
-	  $('.js-category').click(function(){
-			$parent = $(this).parent('li');
-		   if($parent.hasClass('js-show')){
-                        $parent.removeClass('js-show');
-                        $(this).children('i').removeClass('icon-shouqijiantou').addClass('icon-zhankaijiantou');
-                    }else{
-                        $parent.siblings().removeClass('js-show');
-                        $parent.addClass('js-show');
-                        $(this).children('i').removeClass('icon-zhankaijiantou').addClass('icon-shouqijiantou');
-                         $parent.siblings().find('i').removeClass('icon-shouqijiantou').addClass('icon-zhankaijiantou');
-                    }
-		  });
-	  });    
- 
- $(document).on("click", "#del-affirm", function() {
-        $.toast("删除成功");
-		$('.add-del_btnns').fadeIn();
-		$('.stus_del').fadeOut();
-		$('#button_sp_area').fadeOut();
-      }); 
-</script>
-<!--搜索框-->
-<script>
- $(function(){
- $('.searchbar_wrap').searchBar({
-    cancelText:"取消",
-    searchText:'关键字',
-    onfocus: function (value) {
-    },
-    onblur:function(value) {
-    },
-    oninput: function(value) {
-    },
-    onsubmit:function(value){
-    },
-    oncancel:function(){
-    },
-    onclear:function(){
-    }});
-  });     
-</script>
-
 </head>
 
 <body ontouchstart>
 	
 
 <div class="weui_btn_primary weui-header z-ind1000"> 
-    <div class="weui-header-left"> <a href="teacher_function.html" class="icon icon-shouye f20"><span class=" f15">首页</span></a>  </div>
-    <h1 class="weui-header-title"  onclick="selectmenu('1');">一年级（2）班<i id="cell_1" class="icon icon-zhankaijiantou mar_l5 f14 f-green"></i></h1>
-    <div class="weui-header-right"><a href="javascript:;" onclick="selectmenu('3');" class="weui_icon_search"></a></div> 
+    <div class="weui-header-left"> <a href="teacher_function.html" class="icon icon-icon1 f20"></a>  </div>
+    <h1 class="weui-header-title">17-18学年（一）</h1>
+    <div class="weui-header-right"><a href="teacher_reports-more.html" class="icon icon-baogao f20"></a></div> 
 </div>
-<div id="menu_3" style="display:none;">
-    <div class="searchbar_wrap">
-    </div>
-</div>
-<!--报告书-学生列表-->
+<!--报告书-->
 <div class="page-bd weui_cells">
     <div class="weui-flex">
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/student1.png" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
     </div>
     <div class="weui-flex">
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/student1.png" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/student1.png" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/vcode.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
     </div>
     <div class="weui-flex">
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
     </div>
     <div class="weui-flex">
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/student1.png" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
     </div>
     <div class="weui-flex">
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/student1.png" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/student1.png" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/teacher_tx.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
         <div class="weui-flex-item">
           <div class="rep_users placeholder">
-           <a href="teacher_reports-detail.html">
             <div class="pics center"><img class="weui_media_appmsg_thumb circle border wh_100 center" src="../images/vcode.jpg" alt=""></div> 
-            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p> 
-           </a>
+            <p class="f14  tcenter f-666 mar_tb5">邓晓桢</p>  
           </div>
         </div>
     </div>

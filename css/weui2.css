@@ -389,7 +389,13 @@ input.bg-orange-b {
 .bg-gray01 {
   background-color: #f9f9f9 !important;
 }
-/*字体大小 生成11-32 35 40 45 50 55 60像素字体 */
+/*字体大小 生成11-32 35 40 45 50 55 60...像素字体 */
+.f8 {
+  font-size: 8px !important;
+  line-height: 8px; }
+.f10 {
+  font-size: 10px !important;
+  line-height: 10px; }
 .f11 {
   font-size: 11px !important;
   line-height: 11px; }
@@ -499,6 +505,18 @@ input.bg-orange-b {
 .f60 {
   font-size: 60px !important;
   line-height:60px; }
+.f70 {
+  font-size: 70px !important;
+  line-height:70px; }
+.f80 {
+  font-size: 80px !important;
+  line-height:80px; }
+.f90 {
+  font-size: 90px !important;
+  line-height:90px; }
+.f100 {
+  font-size: 100px !important;
+  line-height:100px; }
 
 /*字体颜色*/
 .f-red {
@@ -506,7 +524,8 @@ input.bg-orange-b {
 
 .f-green {
   color: #28ce57 !important; }
-
+.f-blue_b{
+  color: #68a0f4 !important; }
 .f-blue {
   color: #596c96 !important; }
 .f-orange{ 
