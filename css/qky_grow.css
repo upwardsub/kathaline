@@ -86,7 +86,7 @@
 @media ( min-device-width:381px ) and ( max-width:414px ){.rep_users .pics{ width:78px; height:78px;}}
 @media ( min-device-width:415px ){.rep_users .pics{ width:88px; height:88px;}}
 .zmbox.grade-l{ left:3px; height:80%;}
-.zmbox.grade-l .grade-cell{ height:6.5%; display:inline-block;}
+.zmbox.grade-l .grade-cell{ height:6%; display:inline-block;}
 .zmbox.grade-l .grade-cell .zm-s{ border:1px solid #e0e0e0; background:#f9f9f9; border-radius:4px; padding:0 2px;}
 .zmbox.grade-l .grade-cell .zm-s:hover{ transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2); background:#28ce57; color:#fff; border-radius:8px;}
 /*历史报告书*/
