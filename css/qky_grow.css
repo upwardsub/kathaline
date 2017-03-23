@@ -81,10 +81,10 @@
 
 /*报告书-学生列表*/
 .rep_users.placeholder{ height:auto; line-height:inherit;}
-@media screen and ( max-width: 320px ) {.rep_users .pics{ width:50px; height:50px;}.weui-header .weui-header-title, .weui-header h1{ font-size:17px;}}
-@media ( min-device-width:321px ) and ( max-width:380px ){.rep_users .pics{ width:60px; height:60px;}}
-@media ( min-device-width:381px ) and ( max-width:414px ){.rep_users .pics{ width:70px; height:70px;}}
-@media ( min-device-width:415px ){.rep_users .pics{ width:88px; height:88px;}}
+@media screen and ( max-width: 320px ) {.rep_users .pics{ width:44px; height:44px;}.weui-header .weui-header-title, .weui-header h1{ font-size:17px;}}
+@media ( min-device-width:321px ) and ( max-width:380px ){.rep_users .pics{ width:54px; height:54px;}}
+@media ( min-device-width:381px ) and ( max-width:414px ){.rep_users .pics{ width:64px; height:64px;}}
+@media ( min-device-width:415px ){.rep_users .pics{ width:80px; height:80px;}}
 .zmbox.grade-l{ left:3px; height:80%;}
 .zmbox.grade-l .grade-cell{ height:6%; display:inline-block;}
 .zmbox.grade-l .grade-cell .zm-s{ border:1px solid #e0e0e0; background:#f9f9f9; border-radius:4px; padding:0 2px;}
