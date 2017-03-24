@@ -34,9 +34,9 @@
 .stus_list{ width:100%;top:0; left:0; height:100%; background:#ebebeb;}
 .stus_list .weui_cells_checkbox .weui_cell{ padding-right:30px;}
 .scroll { overflow-y: auto; -webkit-overflow-scrolling: touch;}
-.zmbox{ position:fixed; width:18px; top:0; right:0;margin:56px 0 0 0; height:96%;}
-.zmbox .zm,.zmbox .zm-s{ display:block;  margin-bottom:2px; color:#999; text-align:center;-webkit-transition:all .4s ease;-moz-transition:all .4s ease;-o-transition:all .4s ease;transition:all .4s ease;height:16px; line-height:16px;}
-.zmbox .zm{width:16px; font-size:12px; }
+.zmbox{ position:fixed; width:21px; top:0; right:0;margin:56px 0 0 0; height:96%;}
+.zmbox .zm,.zmbox .zm-s{ display:block;  margin-bottom:2px; color:#999; text-align:center;-webkit-transition:all .4s ease;-moz-transition:all .4s ease;-o-transition:all .4s ease;transition:all .4s ease;height:15px; line-height:15px;}
+.zmbox .zm{width:15px; font-size:11px; position:relative}
 .zmbox .zm-s{width:26px; font-size:10px; line-height:18px;}
 .zmbox .zm:hover,.zmbox .zm-s:hover{ transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2); background:#28ce57; color:#fff; border-radius:8px;}
 /*上传*/
