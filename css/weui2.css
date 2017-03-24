@@ -54,13 +54,13 @@ a:active {
   display: cell-table; }
 
 .tleft {
-  text-align: left; }
+  text-align: left !important; }
 
 .tright {
-  text-align: right; }
+  text-align: right !important; }
 
 .tcenter {
-  text-align: center; }
+  text-align: center !important; }
 
 .center {
   margin-left: auto;
@@ -322,16 +322,16 @@ a:active {
 	content:"."
 }
 /*背景色*/
-.bg-white{ background:#fff;}
+.bg-white{ background:#fff !important;}
 
 .bg-green{
-	background-color:#28ce57;
+	background-color:#28ce57 !important;
 }
 .bg-red{
-	background-color:#f76260;
+	background-color:#f76260 !important;
 }
 .bg-blue {/*蓝色*/
-  background-color: #596c96;
+  background-color: #68a0f4 !important;
 }
 .bg-blue:not(.weui_btn_disabled):visited {
   color: #FFFFFF;
@@ -359,7 +359,7 @@ input.bg-blue-b {
   border-width: 0;
 } 
 .bg-orange {/*橙色*/
-  background-color: #FF8a00;
+  background-color: #FF8a00 !important;
 }
 .bg-orange:not(.weui_btn_disabled):visited {
   color: #FFFFFF;
