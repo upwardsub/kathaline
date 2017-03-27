@@ -121,6 +121,8 @@
 .ribbon .ribbon-content:before {left: 0;border-width: 0.6rem 0 0 0.6rem;}
 .ribbon .ribbon-content:after {right: 0;border-width: 0.6rem 0.6rem 0 0;}
 /*表格内容0*/
+.rep-d_form .weui-table{ background-color:transparent;}
 .rep-d_form-bor{ border-radius:12% 16% 12% 13%; width:98%;}
 .rep-d_form{ border-radius: 15% 17% 10% 10%;}
-@media screen and (-webkit-min-device-pixel-ratio: 2) {.rep-d_form .weui-table tr:last-child td:last-child:after{background-image: none}}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {.rep-d_form .weui-table tr:last-child td:last-child:after,.rep-d_form .weui-table tr td.bold:after{background-image: none}
+.rep-d_form .weui-table tr td.bold{ height:40px; line-height:40px;}}

@@ -9,6 +9,41 @@
 <link rel="stylesheet" href="../css/qky_grow.css"/>
 <link rel="stylesheet" type="text/css" href="../icon_font/iconfont.css"/>
 <script src="../js/zepto.min.js"></script>
+<script>
+$(function(){
+//定义文本
+const paragraph = $('#paragraph');
+const paragraphText = paragraph.text();
+const paragraphLength = paragraph.text().length;
+//定义文章长度
+const maxParagraphLength = 52;
+//定义全文按钮
+const paragraphExtender = $('#paragraphExtender');
+var toggleFullParagraph = false;
+
+//定义全文按钮
+if (paragraphLength < maxParagraphLength) {
+  paragraphExtender.hide();
+} else {
+  paragraph.html(paragraphText.substring(0, maxParagraphLength) + '...');
+  paragraphExtender.click(function(){
+    if (toggleFullParagraph) {
+      toggleFullParagraph = false;
+      paragraphExtender.html('显示全文');
+      paragraph.html(paragraphText.substring(0, maxParagraphLength) + '...');
+    } else {
+      toggleFullParagraph = true;
+      paragraphExtender.html('收起');
+      paragraph.html(paragraphText);
+    }
+  });
+};
+const menu = $('#actionMenu');
+const menuBtn = $('#actionToggle');
+menuBtn.click(function(){menu.toggleClass('active')});
+	  });    
+</script>
+
 </head>
 
 <body ontouchstart style="background-color:#cef6d7;">
@@ -79,9 +114,13 @@
                 <tbody>
                 <tr><td>仪容仪表</td><td><span class=" f-blue">15</span></td></tr>
                 <tr><td>仪容仪表</td><td><span class=" f-blue">15</span></td></tr>
-                <tr class="bold"><td class=" f16">总分</td><td><span class="f16 f-orange">115</span></td></tr>
+                <tr><td class="bold f16">总分</td><td><span class="bold f16 f-orange">115</span></td></tr>
                 </tbody>
             </table>
+            <div class="weui_cell_bd weui_cell_primary mar_10 f14">
+                    <p class=" f-666 mar_b5">学期评语：</p><p class="lheight mar_b5"  id="paragraph">kathaline 教师，学生评价页面更新教师，学生评价页面更新教师，学生评价页面更新教师，学生评价页面更新教师，学生评价页面更新教师，学生评价页面更新教师，学生评价页面更新教师，学生评价页面更新教师，学生评价页面更新教师，学生评价页面更新教师，学生评价页面更新.</p>
+                    <a id="paragraphExtender" class="paragraphExtender f-blue">显示全文</a>
+                </div>
             </div>
         </div>
     </div>
