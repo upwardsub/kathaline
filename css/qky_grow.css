@@ -123,4 +123,4 @@
 /*表格内容*/
 .rep-d_form-bor{ border-radius:12% 16% 12% 13%; width:98%;}
 .rep-d_form{ border-radius: 15% 17% 10% 10%;}
-.rep-d_form .weui-table tr:last-child td:after{ background:none; border:none;}
+.rep-d_form .weui-table tr:last-child td:after{ background:none; border-bottom:none;}
