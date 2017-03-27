@@ -1895,7 +1895,7 @@ weui-box*/
   line-height: 21px;
   color:#FFF;
 }
-.weui-header .weui-header-left a,.weui-header .weui-header-left button,.weui-header .weui-header-right a,.weui-header .weui-header-right button { padding:10px 2px;
+.weui-header .weui-header-left a,.weui-header .weui-header-left button,.weui-header .weui-header-right a,.weui-header .weui-header-right button { padding:10px 7px;
   float: left;
   margin-right: 8px;
 }
@@ -1903,10 +1903,10 @@ weui-box*/
   opacity: .8
 }
 .weui-header .weui-header-left {
-  left: 18px
+  left:8px
 }
 .weui-header .weui-header-right {
-  right: 15px
+  right: 8px
 }
 .weui-header .weui-header-right a,.weui-header .weui-header-right button {
   margin-left: 8px;
