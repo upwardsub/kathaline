@@ -1889,13 +1889,13 @@ weui-box*/
 }
 .weui-header .weui-header-left,.weui-header .weui-header-right {
   position: absolute;
-  top: 12px;
+  top:2px;
   display: block;
   font-size: 16px;
   line-height: 21px;
   color:#FFF;
 }
-.weui-header .weui-header-left a,.weui-header .weui-header-left button,.weui-header .weui-header-right a,.weui-header .weui-header-right button {
+.weui-header .weui-header-left a,.weui-header .weui-header-left button,.weui-header .weui-header-right a,.weui-header .weui-header-right button { padding:10px 2px;
   float: left;
   margin-right: 8px;
 }
