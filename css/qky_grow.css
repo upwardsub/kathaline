@@ -20,7 +20,7 @@
 .class_checks .weui_check_label,.zb_checks .weui_check_label{ padding-left:2em;}
 /*增减学生*/
 .weui-header .weui-header-title .weui_input{ width:auto !important;}
-.weui_uploader_file .stus_del{right:5px;}
+.weui_uploader_file .stus_del{top:-2px;right:6px; padding-bottom:15px; padding-left:15px;}
 .weui_uploader_dele_wrp{ float: left; position: relative; margin-right: 9px; margin-bottom: 9px; width:58px; height:58px; border: 1px solid #d9d9d9;}
 .weui_uploader_dele_wrp:after{width: 39.5px; height: 2px; content: " "; position: absolute;top: 50%;left: 50%; -webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);   background-color: #d9d9d9;}
 .wh_40{ width:40px !important; height:40px !important;}
