@@ -98,6 +98,7 @@
 .zmbox.grade-l .grade-cell .zm-s:hover{ transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2); background:#28ce57; color:#fff; border-radius:8px;}
 .cell-rep_users{ width:25%; float:left; margin:5px auto;}
 /*历史报告书*/
+.wid-50{ width:50% !important;}
 .grade_line{ border-left:2px solid #e0e0e0; height:100%; left:18px; width:0;}
 .rep_cell{ height:30px; padding:35px 0 25px 10px;}
 .rep_icon{ left:50%; margin-left:-45px;top:50%; margin-top:-45px;}
