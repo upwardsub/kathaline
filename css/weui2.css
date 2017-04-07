@@ -1902,10 +1902,10 @@ weui-box*/
   opacity: .8
 }
 .weui-header .weui-header-left {
-  left:8px
+  left:5px
 }
 .weui-header .weui-header-right {
-  right: 8px
+  right: 5px
 }
 .weui-header .weui-header-right a,.weui-header .weui-header-right button {
   margin-left: 8px;
