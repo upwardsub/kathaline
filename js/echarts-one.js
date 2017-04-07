@@ -12,7 +12,7 @@ var dom = document.getElementById("all-sgtz");
       trigger: 'axis'
   },
   legend: {
-      x:'70%',
+      x:'90%',
       data:['学生体重','学生身高']
   },
   toolbox: {
@@ -21,8 +21,8 @@ var dom = document.getElementById("all-sgtz");
       }
   },
   grid: {
-      left: '2%',
-      right: '4%',
+      left: '1%',
+      right: '1%',
       bottom: '3%',
       containLabel: true
   },
