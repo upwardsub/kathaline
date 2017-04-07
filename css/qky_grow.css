@@ -8,7 +8,14 @@
 .ms-controller{
     visibility: hidden
 }
-
+/*单选按钮样式*/
+.weui_cells_radio .weui_check:checked+.weui_icon_checked:before{display:block;content: "\e668";color: #28ce57;font-size:25px;font-family:"iconfont" !important;font-style: normal;
+    font-weight: 400; margin-top:-2px;margin-right:-1px;
+    speak: none;
+    display:block;
+    font-variant: normal;
+    text-transform: none;
+    }
 
 /*s身份选择*/
 .roles_pic{ padding:3px; background:#fff; width:60px; height:60px;}
@@ -97,6 +104,7 @@
 .zmbox.grade-l .grade-cell .zm-s{ border:1px solid #e0e0e0; background:#f9f9f9; border-radius:4px; padding:0 2px;}
 .zmbox.grade-l .grade-cell .zm-s:hover{ transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2); background:#28ce57; color:#fff; border-radius:8px;}
 .cell-rep_users{ width:25%; float:left; margin:5px auto;}
+.cell-rep_users .rep_users p{ width:100%;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 /*历史报告书*/
 .wid-50{ width:50% !important;}
 .grade_line{ border-left:2px solid #e0e0e0; height:100%; left:18px; width:0;}
@@ -131,3 +139,7 @@
 .rep-d_form{ border-radius: 15% 17% 10% 10%;}
 @media screen and (-webkit-min-device-pixel-ratio: 2) {.rep-d_form .weui-table tr:last-child td:last-child:after,.rep-d_form .weui-table tr td.bold:after{background-image: none}
 .rep-d_form .weui-table tr td.bold{ height:40px; line-height:40px;}}
+
+/*体质健康*/
+.weui_media_box .weui_media_title { margin-bottom:8px;}
+.echart01{ width:100%; height:auto; min-height:280px;}

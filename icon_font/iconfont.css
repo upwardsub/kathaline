@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1491379106496'); /* IE9*/
-  src: url('iconfont.eot?t=1491379106496#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1491379106496') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1491379106496') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1491379106496#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1491470358142'); /* IE9*/
+  src: url('iconfont.eot?t=1491470358142#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1491470358142') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1491470358142') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1491470358142#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -31,6 +31,8 @@
 
 .icon-weixin:before { content: "\e63b"; }
 
+.icon-zuozhao:before { content: "\e621"; }
+
 .icon-danxuan:before { content: "\e668"; }
 
 .icon-icon1:before { content: "\e601"; }
@@ -39,9 +41,17 @@
 
 .icon-jilu:before { content: "\e646"; }
 
+.icon-nan:before { content: "\e7cf"; }
+
+.icon-nv:before { content: "\e7d0"; }
+
 .icon-icon:before { content: "\e726"; }
 
 .icon-shenhe:before { content: "\e6ac"; }
+
+.icon-tizhong:before { content: "\e7da"; }
+
+.icon-paobu:before { content: "\e655"; }
 
 .icon-rilixuanze:before { content: "\e6b1"; }
 
@@ -53,7 +63,7 @@
 
 .icon-icon-yxj-record:before { content: "\e639"; }
 
-.icon-weui_icon_checked:before { content: "\e6ab"; }
+.icon-danxuan1:before { content: "\e6ab"; }
 
 .icon-iconfontchengji:before { content: "\e7b3"; }
 
@@ -81,22 +91,23 @@
 
 .icon-gray_arrow_left:before { content: "\e666"; }
 
+.icon-tzzb:before { content: "\e60d"; }
+
 .icon-plus-datareport:before { content: "\e730"; }
 
 .icon-bgshu1:before { content: "\e62e"; }
 
 .icon-wron404:before { content: "\e667"; }
 
+.icon-shengao:before { content: "\e7db"; }
+
 .icon-shouqijiantou:before { content: "\e632"; }
+
+.icon-fgn:before { content: "\e60c"; }
 
 .icon-zanwujilu:before { content: "\e633"; }
 
 .icon-tongji1:before { content: "\e612"; }
 
-.weui_cells_radio .weui_check:checked+.weui_icon_checked:before{display:block;content: "\e668";color: #28ce57;font-size:25px;font-family:"iconfont" !important;font-style: normal;
-    font-weight: 400; margin-top:-2px;margin-right:-1px;
-    speak: none;
-    display:block;
-    font-variant: normal;
-    text-transform: none;
-    }
+.icon-bmi:before { content: "\e68d"; }
+
