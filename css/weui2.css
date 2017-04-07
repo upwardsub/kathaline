@@ -1872,14 +1872,13 @@ weui-box*/
 /*header*/
 .weui-header { height:44px; width:100%; position: relative; -webkit-box-sizing: border-box;}
 .weui-header .weui-header-title,.weui-header h1 {
-  margin: 0 83px;
-  margin-left: 100px;
+  margin: 0  20%;
   line-height: 44px;
   text-align: center;
   height: 44px;
   font-size: 18px;
   font-weight: 400;
-  width: auto;
+  width:60%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
