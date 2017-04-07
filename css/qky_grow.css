@@ -143,3 +143,5 @@
 /*体质健康*/
 .weui_media_box .weui_media_title { margin-bottom:8px;}
 .echart01{ width:100%; height:auto; min-height:280px;}
+.weui-table02 th,.weui-table02 td{ padding:15px 0; font-size:14px}
+.weui-table02 tr{}
