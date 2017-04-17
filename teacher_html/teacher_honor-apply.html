@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>学生综合素质评价</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<link rel="stylesheet" href="../css/weui.css"/>
+<link rel="stylesheet" href="../css/weui2.css"/>
+<link rel="stylesheet" href="../css/qky_grow.css"/>
+<link rel="stylesheet" type="text/css" href="../icon_font/iconfont.css"/>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/picker.js"></script>
+<script src="../js/p-apply.js"></script>
+<script>
+             
+  
+function previewImage(file) {
+    var MAXWIDTH = 100;
+    var MAXHEIGHT = 200;
+    if (file.files && file.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (evt) {         
+            $('#img1').html('<li class="weui_uploader_file" style="background-image:url('+evt.target.result+')"></li>');          
+        };
+        reader.readAsDataURL(file.files[0]);//
+        console.log(file.files[0]);
+    }
+}
+     
+$(document).on("click", "#sd1", function() {
+        $.alert("提交成功", "");
+      });
+</script>
+</head>
+
+<body ontouchstart>
+	
+
+<div class="weui_btn_primary weui-header z-ind1000"> 
+    <div class="weui-header-left"> <a href="teacher_honor-list.html" class="icon icon-icon1 f20"></a>  </div>
+    <h1 class="weui-header-title">荣誉申报信息</h1>
+
+</div>
+
+<form id="form">
+<div class="weui_cells weui_cells_form ">   
+        <div class="weui_cell weui_media_box weui_media_appmsg">
+                <div class="weui_cell_hd"><label for="" class="weui_label">荣誉图片:</label></div>
+                <div class=" weui_cell_bd weui_cell_primary">
+                <div class="weui_media_hd right honor-img">
+                    <input class="honor_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" id=""/>
+                    <input  type="hidden"  id="" />
+                    <!--<img class="weui_media_appmsg_thumb" src="../images/u253.png" alt="">-->
+                    <div class="tcenter bg-gray01 honor-icon tcenter"><span class="icon icon-qiyerongyu f40 middle f-999"></span></div>
+                </div>
+               </div>
+            </div>       
+       
+       <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label"><em class="f-red">*</em>对应班级:</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="" id='text1'/>  
+                </div>
+              
+            </div>   
+        <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label"><em class="f-red">*</em>学年学期:</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="" id='text2'/>
+                    
+                </div>
+              
+            </div>       
+        <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label"><em class="f-red">*</em>学生姓名:</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="" id='text' onClick="javascript:top.location='stus_list.html';"/>
+                    
+                </div>
+              
+            </div>       
+        <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label"><em class="f-red">*</em>获奖名称:</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="" />
+                    
+                </div>
+              
+            </div>       
+  
+          <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label"><em class="f-red">*</em>获奖日期:</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="" id='date'/>
+                    
+                </div>
+              
+            </div> 
+          <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label"><em class="f-red">*</em>获奖项目:</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="" id='text3'/>  
+                </div>
+              
+            </div>   
+        <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">获奖负责人:</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="" />
+                    
+                </div>
+              
+            </div>       
+                 
+        <div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">荣誉评语:</label></div>
+                
+            </div>       
+        <div class="weui_cells_form mar_0">
+            <div class="weui_cell weui-border-l weui-border-t mar_l15">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <textarea id="textarea" class="weui_textarea" placeholder="请输入文本" rows="3"></textarea>
+                    <div class="weui_textarea_counter"><span id='count'>0</span>/<span id='count_max'>20</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <div class="weui_uploader">
+                        <div class="weui_uploader_hd weui_cell">
+                            <div class="weui_cell_bd weui_cell_primary">荣誉附件:</div>
+                            <div class="weui_cell_ft"></div>
+                        </div>
+                        <div class="weui_uploader_bd">
+                            <ul class="weui_uploader_files" id='img1'>
+                            
+                            
+                            </ul>
+                            <div class="weui_uploader_input_wrp">
+                                <input class="weui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" id="i1" onchange="previewImage(this)"/>
+                                <input  type="hidden"  id="i4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+ </div>
+ 
+    <div class="weui_btn_area weui_btn_area_inline">
+        <a id="reset" href="javascript:;" class="weui_btn weui_btn_primary bg-green-b" onclick="document.getElementById('form').reset();">重置</a><a href="javascript:;" class="weui_btn weui_btn_primary bg-green"  id='sd1'>提交</a>
+    </div>
+ </form>
+
+ 
+</body>
+</html>

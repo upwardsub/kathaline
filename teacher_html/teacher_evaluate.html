@@ -11,6 +11,12 @@
 <script src="../js/zepto.min.js"></script>
 <!--下拉收起-->
 <script type="text/javascript">
+ $(function(){
+    TagNav('#tagnav',{
+        type: 'scrollToFirst',
+    });
+	  $('.weui_tab').tab();
+	  	  });    
 function selectmenu(n){
 var eleMore = document.getElementById("menu_"+n);
 if(eleMore.style.display=="none"){

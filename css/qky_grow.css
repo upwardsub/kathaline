@@ -41,7 +41,7 @@
 .stus_list{ width:100%;top:0; left:0; height:100%; background:#ebebeb;}
 .stus_list .weui_cells_checkbox .weui_cell{ padding-right:30px;}
 .scroll { overflow-y: auto; -webkit-overflow-scrolling: touch;}
-.zmbox{ position:fixed; width:21px; top:0; right:0;margin:56px 0 0 0; height:96%;}
+.zmbox{ position:fixed; width:17px; top:0; right:0;margin:56px 0 0 0; height:96%;}
 .zmbox .zm,.zmbox .zm-s{ display:block;  margin-bottom:2px; color:#999; text-align:center;-webkit-transition:all .4s ease;-moz-transition:all .4s ease;-o-transition:all .4s ease;transition:all .4s ease;height:15px; line-height:15px;}
 .zmbox .zm{width:15px; font-size:11px; position:relative}
 .zmbox .zm-s{width:26px; font-size:10px; line-height:18px;}
@@ -60,7 +60,7 @@
 .weui_media_box.weui_media_text h2.abs{ right:30px;top:50px;}
 .weui_media_box.weui_media_text i.abs{ right:15px;top:20px;}
 .page-bd li:first-child.weui_panel_bd{ margin-top:12px;}
-.weui_uploader_files .weui_uploader_file {background-size:contain;}
+
 /*一级二级指标宽度*/
 @media screen and ( max-width: 320px ) {.wlev01{max-width:112px;}.wlev02{max-width:140px;}}
 @media ( min-device-width:321px ) and ( max-width:360px ){.wlev01{max-width:130px;}.wlev02{max-width:150px;}}
@@ -94,14 +94,17 @@
 @media screen and ( max-width: 320px ) {.rep_users .pics{ width:44px; height:44px;}.weui-header .weui-header-title, .weui-header h1{ font-size:17px;}
 .report_pers .user-pic{ width:78px; height:78px;}/*个人信息*/
 .weui-table02 td:first-child span{ width:130px;}
+.honor-tit{max-width:120px}
 }
 @media ( min-device-width:321px ) and ( max-width:380px ){.rep_users .pics{ width:54px; height:54px;}
 .report_pers .user-pic{ width:86px; height:86px;}/*个人信息*/
 .weui-table02 td:first-child span{ width:150px;}
+.honor-tit{max-width:176px}
 }
 @media ( min-device-width:381px ) and ( max-width:414px ){.rep_users .pics{ width:64px; height:64px;}
 .report_pers .user-pic{ width:92px; height:92px;}/*个人信息*/
 .weui-table02 td:first-child span{ width:170px;}
+.honor-tit{max-width:222px}
 }
 @media ( min-device-width:415px ){.rep_users .pics{ width:80px; height:80px;}
 .report_pers .user-pic{ width:100px; height:100px;}/*个人信息*/}
@@ -152,3 +155,23 @@
 .weui-table02 th,.weui-table02 td{ padding:15px 0; font-size:14px; position:relative;}
 .weui-table02 td span{ display:inline-block;}
 .weui-table02 td:first-child span{ max-width:96%;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+/*个人荣誉*/
+.honor-tit{min-width:62%;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.weui-mark-rb.honor-mark { bottom: 0px; right: 0px;width: 60px;background-color: rgba(0, 0, 0, 0.4);}
+.weui_media_box.weui_media_appmsg .weui_media_hd.honor-img{ height:50px; line-height:50px; padding:5px 0;}
+.honor_uploader_input{position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.weui-navigator-list li{ font-weight:normal;}
+.weui_media_box.weui_media_appmsg .honor-icon{width: 100%;
+    height: 100%;
+    vertical-align: top;}
+.weui_article  .honor-icon{ padding:0;}
+.weui_article  .honor-icon .icon{ font-size:120px;}
+.icon-dianzan1:before { content: "\e673"; }

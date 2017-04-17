@@ -39,26 +39,6 @@ $(function(){
 	  });    
 
 </script>
-<!--搜索框-->
-<script>
- $(function(){
- $('.searchbar_wrap').searchBar({
-    cancelText:"取消",
-    searchText:'关键字',
-    onfocus: function (value) {
-    },
-    onblur:function(value) {
-    },
-    oninput: function(value) {
-    },
-    onsubmit:function(value){
-    },
-    oncancel:function(){
-    },
-    onclear:function(){
-    }});
-  });     
-</script>
 
 </head>
 
@@ -68,56 +48,55 @@ $(function(){
 <div class="weui_btn_primary weui-header z-ind1000"> 
     <div class="weui-header-left"> <a href="teacher_function.html" class="icon icon-shouye f20"><span class=" f15">首页</span></a>  </div>
     <h1 class="weui-header-title"  onclick="selectmenu('1');">16-17学年度（1）<i id="cell_1" class="icon icon-zhankaijiantou mar_l5 f14 f-green"></i></h1>
+    <div class="weui-header-right"><a href="teacher_honor-mine.html" class="picker-button close-picker weui_btn weui_btn_mini bg-green-b">我的</a></div> 
 </div>
 <div class="weui_tab " style="height:44px;" id="tab1"><!--tab-fixed添加顶部-->
     <div class="weui_navbar" style="height:44px;">
-            <a href="class_list.html" class="weui_navbar_item f-666 weui-border-r">一年级（2）班<i id="cell_1" class="icon icon-zhankaijiantou mar_l5 f14"></i></a>
+            <a href="class_list-honor.html" class="weui_navbar_item f-666 weui-border-r">一年级（2）班<i id="cell_1" class="icon icon-zhankaijiantou mar_l5 f14"></i></a>
             <a href="level_list.html" class="weui_navbar_item f-666">全部级别<i id="cell_1" class="icon icon-zhankaijiantou mar_l5 f14"></i></a>
     </div>
 </div>
-<!--体质健康列表-->
-<div class="weui_panel_bd ">
+<div class="weui_panel_bd">
    <div class="weui_panel weui_panel_access mar_t12">
-            <a href="teacher_health-rpt.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd circle roles_pic bs">
-                    <img class="weui_media_appmsg_thumb circle" src="../images/teacher.jpg" alt="">
+            <a href="teacher_honor-detail.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd honor-img">
+                    <div class="tcenter bg-gray01 honor-icon tcenter"><span class="icon icon-qiyerongyu f40 middle f-999"></span></div>
                 </div>
-                <div class="weui_media_bd">
-                    <h3 class="weui_media_title f-black"><span class="mar_r5 f15">刘力扬</span><span class="circle bg-blue f-white f12 weui-badge">♂</span><span class="mar_l5 f13" title="201701001201701001">201701001201701001</span></h3>
-                    <p class="weui_media_desc f-blue"><span><i class="icon icon-bmi f18 middle mar_r5"></i>正常</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-fgn f18 middle mar_r5"></i>优秀</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-paobu f18 middle mar_r5"></i>优秀</span></p>
-                </div>
-            </a>
-    </div>        
-   <div class="weui_panel weui_panel_access">
-            <a href="teacher_health-rpt.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd circle roles_pic bs">
-                    <img class="weui_media_appmsg_thumb circle" src="../images/student1.png" alt="">
-                </div>
-                <div class="weui_media_bd">
-                    <h3 class="weui_media_title f-black"><span class="mar_r5 f15">王牧阳</span><span class="circle bg-orange f-white f12 weui-badge">♀</span><span class="mar_l5 f13" title="201701001201701001">201701001201701001</span></h3>
-                    <p class="weui_media_desc f-blue"><span><i class="icon icon-bmi f18 middle mar_r5"></i>正常</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-fgn f18 middle mar_r5"></i>优秀</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-paobu f18 middle mar_r5"></i>优秀</span></p>
+                <div class="weui_media_bd honor-img">
+                    <h3 class="weui_media_title f-black"><span class="f15 left honor-tit" title="计算机科技比赛">计算机科技比赛计算机科技比赛计算机科技比赛</span><span class="mar_r5 f14 f-999 right" title="2017-03-12">2017-03-12</span></h3>
+                    <p class="weui_media_desc f-blue"><span>一年级（1）班</span><em class="mar_r10 pad_r10 weui-border-r"></em><span>梁雨诗</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-dianzan2 mar_r5"></i>(15)</span></p>
                 </div>
             </a>
     </div>        
    <div class="weui_panel weui_panel_access">
-            <a href="teacher_health-rpt.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd circle roles_pic bs">
-                    <img class="weui_media_appmsg_thumb circle" src="../images/teacher.jpg" alt="">
+            <a href="teacher_honor-detail.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd honor-img">
+                    <img class="weui_media_appmsg_thumb" src="../images/u253.png" alt="">
                 </div>
                 <div class="weui_media_bd">
-                    <h3 class="weui_media_title f-black"><span class="mar_r5 f15">王牧之</span><span class="circle bg-blue f-white f12 weui-badge">♂</span><span class="mar_l5 f13" title="201701001201701001">201701001201701001</span></h3>
-                    <p class="weui_media_desc f-blue"><span><i class="icon icon-bmi f18 middle mar_r5"></i>正常</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-fgn f18 middle mar_r5"></i>优秀</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-paobu f18 middle mar_r5"></i>优秀</span></p>
+                    <h3 class="weui_media_title f-black"><span class="f15 left honor-tit" title="计算机科技比赛">计算机科技比赛</span><span class="mar_r5 f14 f-999 right" title="2017-03-12">2017-03-12</span></h3>
+                    <p class="weui_media_desc f-blue"><span>一年级（1）班</span><em class="mar_r10 pad_r10 weui-border-r"></em><span>梁雨诗</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-dianzan2 mar_r5"></i>(15)</span></p>
                 </div>
             </a>
     </div>        
    <div class="weui_panel weui_panel_access">
-            <a href="teacher_health-rpt.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd circle roles_pic bs">
-                    <img class="weui_media_appmsg_thumb circle" src="../images/student1.png" alt="">
+            <a href="teacher_honor-detail.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd honor-img"><div class="tcenter bg-gray01 honor-icon tcenter"><span class="icon icon-qiyerongyu f40 middle f-999"></span></div>
                 </div>
                 <div class="weui_media_bd">
-                    <h3 class="weui_media_title f-black"><span class="mar_r5 f15">李小璐</span><span class="circle bg-orange f-white f12 weui-badge">♀</span><span class="mar_l5 f13" title="201701001201701001">201701001201701001</span></h3>
-                    <p class="weui_media_desc f-999"><span><i class="icon icon-tishi f14 mar_r5"></i>暂未导入体测数据！</span></p>
+                    <h3 class="weui_media_title f-black"><span class="f15 left honor-tit" title="计算机科技比赛">计算机科技比赛计算机科技比赛计算机科技比赛</span><span class="mar_r5 f14 f-999 right" title="2017-03-12">2017-03-12</span></h3>
+                    <p class="weui_media_desc f-blue"><span>一年级（1）班</span><em class="mar_r10 pad_r10 weui-border-r"></em><span>梁雨诗</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-dianzan2 mar_r5"></i>(15)</span></p>
+                </div>
+            </a>
+    </div>        
+   <div class="weui_panel weui_panel_access">
+            <a href="teacher_honor-detail.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd honor-img">
+                    <img class="weui_media_appmsg_thumb" src="../images/u205.png" alt="">
+                </div>
+                <div class="weui_media_bd">
+                    <h3 class="weui_media_title f-black"><span class="f15 left honor-tit" title="计算机科技比赛">计算机科技比赛</span><span class="mar_r5 f14 f-999 right" title="2017-03-12">2017-03-12</span></h3>
+                    <p class="weui_media_desc f-blue"><span>一年级（1）班</span><em class="mar_r10 pad_r10 weui-border-r"></em><span>梁雨诗</span><em class="mar_r10 pad_r10 weui-border-r"></em><span><i class="icon icon-dianzan2 mar_r5"></i>(15)</span></p>
                 </div>
             </a>
     </div>        
@@ -128,14 +107,14 @@ $(function(){
 <section class="weui-menu f16">
         
     <div class="weui-menu-inner">
-     <a href="teacher_health-statistics.html" class="weui_tabbar_item page-bd">
-        <em class="icon icon-tongji f-orange"></em>
-        <span>健康统计</span>
+     <a href="teacher_honor-apply.html" class="weui_tabbar_item page-bd">
+        <em class="icon icon-shenqing f-orange"></em>
+        <span>荣誉申报</span>
      </a> 
     </div>
 </section>
 
-<!--弹出选择学期--> 
+<!--弹出选择--> 
 <div class="weui_msg_img hide abs" id="menu_1" style="display:none;">
 <div class="weui_msg_img"></div>
 <div class="class_checks weui-border-tb tleft">
