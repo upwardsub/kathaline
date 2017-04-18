@@ -3,7 +3,7 @@
 创建时间：2017-03-03 
 创建作者：YHC
 ***/
-
+input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetica Neue",Arial,sans-serif}
 /*avalon隐藏元素*/
 .ms-controller{
     visibility: hidden
@@ -157,7 +157,7 @@
 .weui-table02 td:first-child span{ max-width:96%;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 
 /*个人荣誉*/
-.honor-tit{min-width:62%;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.honor-tit{min-width:100%;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .weui-mark-rb.honor-mark { bottom: 0px; right: 0px;width: 60px;background-color: rgba(0, 0, 0, 0.4);}
 .weui_media_box.weui_media_appmsg .weui_media_hd.honor-img{ height:50px; line-height:50px; padding:5px 0;}
 .honor_uploader_input{position: absolute;
@@ -174,4 +174,11 @@
     vertical-align: top;}
 .weui_article  .honor-icon{ padding:0;}
 .weui_article  .honor-icon .icon{ font-size:120px;}
-.icon-dianzan1:before { content: "\e673"; }
+.honor_form .weui_cell{ padding:15px 15px;}
+#text-name.weui_input{ width:82%}
+.weui_textarea_counter.abs.honor_tips{ right:5px;top:17px;}
+.honor_fj .honor_fj-con{ width:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.wid-r-40{ box-sizing:border-box; border-right:40px solid transparent;}
+.wid-r-50{ box-sizing:border-box; border-right:50px solid transparent;}
+.honor_del.abs.icon{ right:0;}
+
