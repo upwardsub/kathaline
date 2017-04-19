@@ -45,6 +45,28 @@ $(function(){
      }     
   });
 })
+/*进度条*/
+  $(function(){
+ $("#btnStartProgress").click(function(){
+                    if ($(this).hasClass('weui_btn_disabled')) {
+                        return;
+                    }
+
+                    $(this).addClass('weui_btn_disabled');
+
+                    var progress = 0;
+                    var $progress = $('.js_progress');
+
+                    function next() {
+                        $progress.css({width: progress + '%'});
+                        progress = ++progress % 100;
+                        setTimeout(next, 30);
+                    }
+
+                    next();                   
+});
+	  
+	  });    
 
 </script>
 </head>
@@ -143,16 +165,26 @@ $(function(){
           <div class="weui_cell pad_b10">
                 <div class="weui_cell_hd"><label for="" class="weui_label">荣誉附件:</label></div>
                 <div class="weui_cell_bd weui_cell_primary rel clear">
-                     <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default mar_t5"><i class="icon icon-jia mar_r5"></i>上传</a>
+                     <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default mar_t5"  id="btnStartProgress"><i class="icon icon-jia mar_r5"></i>上传</a>
                      <input class="honor_uploader_input" type="file" accept="" id=""/>
                     <input  type="hidden"  id="" />
                 </div>
             </div>   
             <div class="honor_fj f-999 pad_lr15 pad_b15 rel">
+             <div class="weui_progress">
+                <div class="weui_progress_bar">
+                    <div class="weui_progress_inner_bar js_progress" style="width: 50%;"></div>
+                </div>
+                <a href="javascript:;" class="weui_progress_opr"><i class="weui_icon_cancel"></i></a>
+             </div>
+           </div>
+            <div class="honor_fj f-999 pad_lr15 pad_b15 rel">
+             <div class="weui_progress">
               <span class="iblock honor_fj-con wid-r-40" title="bba1cd11728b47103cfff2dbcbcec3fdfd0323d0.jpg"><i class="icon icon-fujian mar_r5 f-blue"></i>
                 <u>bba1cd11728b47103cfff2dbcbcec3fdfd0323d0.jpg</u>
               </span>
-              <i class="icon icon-shanchu abs honor_del mar_r15"></i>
+              <a href="javascript:;" class="weui_progress_opr"><i class="weui_icon_cancel"></i></a>
+             </div>
             </div>
            
  </div>
