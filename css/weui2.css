@@ -9,7 +9,7 @@
 body,html {
 	height:100%;
 	-webkit-tap-highlight-color:transparent}
-body{ background-color:#ebebeb; overflow-x: hidden; padding-top:44px;}
+body{ background-color:#ebebeb; overflow-x: hidden;}
 a {
   color: #28ce57;
   text-decoration: none;

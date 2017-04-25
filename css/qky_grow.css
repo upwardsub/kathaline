@@ -3,11 +3,10 @@
 创建时间：2017-03-03 
 创建作者：YHC
 ***/
+body{-webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box; padding-top:44px;}
 input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetica Neue",Arial,sans-serif}
 /*avalon隐藏元素*/
-.ms-controller{
-    visibility: hidden
-}
+.ms-controller{ visibility: hidden}
 /*单选按钮样式*/
 .weui_cells_radio .weui_check:checked+.weui_icon_checked:before{display:block;content: "\e668";color: #28ce57;font-size:25px;font-family:"iconfont" !important;font-style: normal;
     font-weight: 400; margin-top:-2px;margin-right:-1px;
@@ -16,7 +15,9 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
     font-variant: normal;
     text-transform: none;
     }
-
+/*筛选固定*/
+#menu_3 .searchbar_wrap{ width:100%; position:fixed;top:44px; z-index:501;}
+.weui_tab {  width:100%; position:fixed !important;top:44px; z-index:501}
 /*s身份选择*/
 .roles_pic{ padding:3px; background:#fff; width:60px; height:60px;}
 /*下拉菜单*/
@@ -72,6 +73,7 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
 .weui_media_box.weui_media_text  .weui_tabbar:before{ border:none;}
 .weui_media_box.weui_media_text  .weui_tabbar .weui_tabbar_icon{ width:90%; text-align:center;}
 /*日历*/
+.weui-header.bg_calendar01{ position:relative;}
 .bg_calendar01{ background:#68a0f4;}.bg_calendar02{ background:#c3d9fb !important;}
 .div_calendar .weui_tabbar_item{ height:44px; line-height:44px;}.div_calendar .weui_tabbar_label{ font-size:14px}
 .div_calendar .weui_tabbar:before{ border-top:none;}
