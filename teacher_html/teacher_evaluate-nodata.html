@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>学生综合素质评价</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<link rel="stylesheet" href="../css/weui.css"/>
+<link rel="stylesheet" href="../css/weui2.css"/>
+<link rel="stylesheet" href="../css/qky_grow.css"/>
+<link rel="stylesheet" type="text/css" href="../icon_font/iconfont.css"/>
+<script src="../js/zepto.min.js"></script>
+<!--下拉收起-->
+<script type="text/javascript">
+ $(function(){
+    TagNav('#tagnav',{
+        type: 'scrollToFirst',
+    });
+	  $('.weui_tab').tab();
+	  	  });    
+function selectmenu(n){
+var eleMore = document.getElementById("menu_"+n);
+if(eleMore.style.display=="none"){
+eleMore.style.display = 'block';
+$("#cell_"+n).removeClass("icon-zhankaijiantou");
+$("#cell_"+n).addClass("icon-shouqijiantou ");
+}else{
+eleMore.style.display = 'none';
+$("#cell_"+n).removeClass("icon-shouqijiantou");
+$("#cell_"+n).addClass("icon-zhankaijiantou");
+}
+}
+$(function(){
+	  $('.js-category').click(function(){
+			$parent = $(this).parent('li');
+		   if($parent.hasClass('js-show')){
+                        $parent.removeClass('js-show');
+                        $(this).children('i').removeClass('icon-shouqijiantou').addClass('icon-zhankaijiantou');
+                    }else{
+                        $parent.siblings().removeClass('js-show');
+                        $parent.addClass('js-show');
+                        $(this).children('i').removeClass('icon-zhankaijiantou').addClass('icon-shouqijiantou');
+                         $parent.siblings().find('i').removeClass('icon-shouqijiantou').addClass('icon-zhankaijiantou');
+                    }
+		  });
+	  });    
+ 
+ $(document).on("click", "#del-affirm", function() {
+        $.toast("删除成功");
+		$('.add-del_btnns').fadeIn();
+		$('.stus_del').fadeOut();
+		$('#button_sp_area').fadeOut();
+      }); 
+</script>
+</head>
+
+<body ontouchstart>
+	
+
+      <div class="weui_btn_primary weui-header z-ind1000"> 
+          <div class="weui-header-left"> <a href="teacher_function.html" class="icon icon-shouye f20"><span class=" f15">首页</span></a>  </div>
+          <h1 class="weui-header-title"  onclick="selectmenu('1');">一年级（2）班<i id="cell_1" class="icon icon-zhankaijiantou mar_l5 f14 f-green"></i></h1>
+           
+      </div>
+
+    <div class="weui_cells">
+      <div class=" weui_cells_form">
+        <div class="weui_cell_bd weui_cell_primary pad_10 f-999 f14" >选择学生</div>
+       <div class="weui_cell ">
+        
+        <div class="weui_uploader_bd">
+         <ul class="weui_uploader_files left"  id='d3'>
+         </ul>
+         <span class="add-del_btnns">
+         <a class="weui_uploader_input_wrp f35 tcenter f45 f-999 add_btn" href="stus_list.html"></a>
+         <a class="weui_uploader_dele_wrp f35 tcenter f45 f-999 del_btn" href="javascript:" onclick="$('.stus_del').fadeIn(),$('#button_sp_area').fadeIn(),$('.add-del_btnns').fadeOut();"></a>
+         </span>
+       </div>
+       </div>
+           <div class="button_sp_area page-bd mar_b15" id="button_sp_area" style="display:none;">
+              <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary bg-green mar_0" id="del-affirm">确认</a>
+              <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default mar_0" onclick="$('.add-del_btnns').fadeIn(),$('.stus_del').fadeOut(),$('#button_sp_area').fadeOut();">取消</a>
+          </div>
+      </div>
+      </div>
+    <div class="weui_cells weui_cells_access">    
+        
+        <a class="weui_cell " href="teacher_calendar.html">
+                <div class="weui_cell_bd weui_cell_primary f16">
+                    <p>评价日期</p>
+                </div>
+                <div class="weui_cell_ft">2017-03-13</div>
+        </a>
+    </div>
+    <div class="weui_cells_form clear page-bd">   
+      
+     <div class="weui_msg bg-white pad_b20" >
+        <div class="weui_icon_area"><i class=" icon icon-zanwujilu f-green f70"></i></div>
+        <div class="weui_text_area">
+            <p class="weui_msg_desc f16">暂无评价体系</p>
+        </div>
+    </div> 
+       
+    </div>
+    
+   <div class="weui_btn_area">
+    <a id="formSubmitBtn" href="javascript:" class="weui_btn bg-green weui_btn_primary">提交</a>
+   </div>
+<!--弹出选择班级--> 
+<div class="weui_msg_img hide abs" id="menu_1" style="display:none;">
+<div class="weui_msg_img"></div>
+<div class="class_checks weui-border-tb tleft">
+<div class="page-bd">  
+         <ul>
+         
+            <li class="js-show weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">一年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x11">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x11">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x12">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x12" checked="checked">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x13">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x13">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                </div>
+            </li>
+             <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">二年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x14">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x14">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x15">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x15">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x16">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x16">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>           
+            <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">三年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            
+            <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">四年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            
+            <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">五年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            
+            <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">六年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            
+  <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">初一年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            
+    <!--                              <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">初二年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            
+            <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">初三年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            
+            <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">高一年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label><label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            
+          <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">高二年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            
+  <li class="weui-border-b">
+                <div class="weui-flex js-category">
+                    <p class="weui-flex-item">高三年级</p>
+                    <i class="icon icon-74"></i>
+                </div>
+                <div class="page-category js-categoryInner">
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label" for="x17">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（1）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x17">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label" for="x18">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（2）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x18">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label" for="x19">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>（3）班</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x19">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+                </div>
+            </li>            -->
+     </ul>
+    </div>
+</div>
+</div>
+
+<!--弹出图片-->
+<div class="weui-gallery" style="display:none"  onclick="$('.weui-gallery').fadeOut();">
+    <span class="weui-gallery-img" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAGFBAMAAADzwA07AAAAIVBMVEXr6+vPz8/X19fp6ene3t7k5OTm5ubh4eHT09Pb29vR0dHqLrSfAAACyklEQVR42uzBgQAAAACAoP2pF6kCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGB27GdHaSiO4vgJ5e+s5lzAFlZ2Y1yWoIm6AjPJbItG3VJdmLiiOg9Aow8AybinK1/Tey9ldDttl+eTFC6w+4b+2luRNi2XcIJl8v/H6quHhf9BHiXnFlbGE6wep/D8+gm8Dp8CnEAeJePOBz4n7XKssi254gFWzEkVUWVb0uEeVklz7rxS2ZYM/PnfZ8zEz4atyrYkYOjn63emAPI5VLYtxczHe+HnbWxc7K9fVLYFxwjAIur5eVuGQLcgn6lsczkTYDNDOQb6Nma/oJWqbGMLV/EYIg6BAffIaG5iTlW2sSFXQDFGblzDAwqTIIi5VdmmRrZbYI/F3FXeDbj3uQ8q29SA1/ZYYcgtFkzeMAXQ50llmwo4RYcpRlwhj5DN4RShyjZWTHA1Bwa233Fm435w4onKNnY0yAwQ8BrFFGuezVS2sc0c6xBAPA04Rswz8+9Z7VBl61lwG48BrCd+IEQ33i36DB8eNKpsHUP+KPcAMuMvYgYXnFzS71S2jhF/8+D/mq+YIotwURh4GVOVraPHXy4dOsznfrNb3XUh9kv3nqhsHQEjlw5dFsa97qudAnK/RI8GKltLTANfkyEQlFECfOMBGDFKAaw5Vtl61lW1wifMaW7fMkpcZJr7u+fkTmXr2VRbgqM/+3slrZ+wPtP7A5WtZ8FTVfgA63VhYyZw3tGaJSrbkuDTe1Re3t1/hIiIiIiIiIiIiIj8ZQ8OBAAAAACA/F8bQVVVVVVVVVVVVVVVVVVVhT04EAAAAAAA8n9tBFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVpT04JAAAAAAQ9P+10RMAAAAAAAAAAAAAAADAArTtXKLPR7LcAAAAAElFTkSuQmCC);"></span>
+    <div class="weui-gallery-opr">
+        <a href="javascript:" class="weui-gallery-del" onclick="$('.weui-gallery').fadeOut();">
+            <i class="icon icon-shanchu f18 f-gray"></i>
+        </a>
+    </div>
+</div>
+
+    
+<div class=" pad_b60"></div> 
+
+<section class="weui-menu f16">
+        <div class="weui-menu-inner">
+         <a href="teacher_records.html" class="weui_tabbar_item page-bd">
+            <em class="icon icon-pingjia1 f-blue"></em>
+            <span>评价记录</span>
+         </a>
+        </div>
+        <div class="weui-menu-inner">
+         <a href="teacher_statistics.html" class="weui_tabbar_item page-bd">
+            <em class="icon icon-tongji f-orange"></em>
+            <span>评价统计</span>
+         </a> 
+        </div>
+    </section>
+</body>
+</html>
