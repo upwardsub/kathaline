@@ -202,7 +202,7 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
 .zwt_yc{ display:none;}
 .zwt_fz20{ font-size:40px;}
 .zwt_nodata{ padding:20px 0 10px; text-align:center; line-height:22px; color:#535353;}
-.zwt_box{ width:95%; box-sizing:border-box;align-items: center;margin:10px auto 20px;border:5px solid  #28ce57;   border-radius:30px; background:#fff;}
+.zwt_box{ width:95%; box-sizing:border-box;align-items: center;margin:10px auto 20px;border:5px solid  #28ce57;   border-radius:30px; background:#fff; overflow:hidden;}
 .zwt_box .weui-table tr:last-child td:last-child:after,
 .zwt_box .weui-table td:after,
 .zwt_box .weui-table th:after,
