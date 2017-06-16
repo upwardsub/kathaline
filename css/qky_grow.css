@@ -256,8 +256,8 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
 .zwt_kqcont{ text-align:center; line-height:24px; padding:2px 0;}
 .zwt_foot{ background:rgba(255,255,255,0.8); padding:10px; text-align:center; color:#737373; border-top:1px solid #cef6d7;}
 .zwt_order{ position:fixed;   right:10px; bottom:10px;}
-.zwt_order a{ display:block; background:rgba(206,246,215,0.4); border:2px solid #28ce57; border-radius:50%; width:54px; height:54px; line-height:18px; font-size:14px; color:#535353; text-align:center; color:#28ce57; box-sizing:border-box; padding-top:7px;}
-.zwt_order a.active{ color:#fff; background:#28ce57;}
+.zwt_order a.zwt_trn{ display:block; background:rgba(206,246,215,0.4); border:2px solid #28ce57; border-radius:50%; width:54px; height:54px; line-height:18px; font-size:14px; color:#535353; text-align:center; color:#28ce57; box-sizing:border-box; padding-top:7px;}
+.zwt_order a.zwt_trn.active{ color:#fff; background:#28ce57;}
 .zwt_trn{-webkit-transition: all 0.15s ease-out 0s;-moz-transition: all 0.15s ease-out 0s;transition: all 0.15s ease-out 0s;}
 .zwt_order_ul{ position:absolute; bottom:-200px; right:0; display:block; width:120px; box-sizing:border-box; padding:5px 5px 0; background:rgba(206,246,215,0.8);border-radius:10px;}
 .zwt_order_ul.open{bottom:101%;}
