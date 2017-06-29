@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>学生综合素质评价</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<link rel="stylesheet" href="../css/weui.css"/>
+<link rel="stylesheet" href="../css/weui2.css"/>
+<link rel="stylesheet" href="../css/qky_grow.css"/>
+<link rel="stylesheet" type="text/css" href="../icon_font/iconfont.css"/>
+<script src="../js/zepto.min.js"></script>
+<!--下拉收起-->
+<script type="text/javascript">
+function selectmenu(n){
+var eleMore = document.getElementById("menu_"+n);
+if(eleMore.style.display=="none"){
+eleMore.style.display = 'block';
+$("#cell_"+n).removeClass("icon-zhankaijiantou");
+$("#cell_"+n).addClass("icon-shouqijiantou ");
+}else{
+eleMore.style.display = 'none';
+$("#cell_"+n).removeClass("icon-shouqijiantou");
+$("#cell_"+n).addClass("icon-zhankaijiantou");
+}
+}
+</script>
+</head>
+
+<body ontouchstart>
+	
+
+<div class="weui_btn_primary weui-header z-ind1000"> 
+    <div class="weui-header-left"> <a href="" class="icon icon-icon1 f20 btn-slide-bar"></a>  </div>
+    <h1 class="weui-header-title" >选择学期</h1>
+    <div class="weui-header-right"><a href="" class="picker-button close-picker weui_btn weui_btn_mini bg-green">确认</a></div> 
+</div>
+
+<!--选择学期--> 
+<div class="class_checks weui-border-tb tleft">
+<div class="page-bd">  
+                
+                
+                  <div class="weui_cells weui_cells_radio"  style="margin-top: 0px;">
+                      <label class="weui_cell weui_check_label f16 pad_l15" for="x11">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>16-17学年度（1）</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x11">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label f16 pad_l15" for="x12">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>16-17学年度（2）</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x12" checked="checked">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label f16 pad_l15" for="x13">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>16-17学年度（3）</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x13">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label f16 pad_l15" for="x14">
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>16-17学年度（1）</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" class="weui_check" name="radio1" id="x14">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                      <label class="weui_cell weui_check_label f16 pad_l15" for="x15">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>16-17学年度（1）</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x15">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                           <label class="weui_cell weui_check_label f16 pad_l15" for="x16">
+          
+                          <div class="weui_cell_bd weui_cell_primary">
+                              <p>16-17学年度（1）</p>
+                          </div>
+                          <div class="weui_cell_ft">
+                              <input type="radio" name="radio1" class="weui_check" id="x16">
+                              <span class="weui_icon_checked"></span>
+                          </div>
+                      </label>
+                  </div>
+                    
+    </div>
+</div>
+</body>
+</html>

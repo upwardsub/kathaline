@@ -22,7 +22,8 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
 .roles_pic{ padding:3px; background:#fff; width:60px; height:60px;}
 /*下拉菜单*/
 .icon-zhankaijiantou,.icon-shouqijiantou{ color:#999; font-size:12px;}
-.class_checks,.zb_checks{position:absolute;top:44px; height:auto; width:100%; background:#fff;}
+.class_checks,.zb_checks{ height:auto; width:100%; background:#fff;}
+.weui_msg_img .class_checks,.weui_msg_img .zb_checks{position:absolute;top:44px;}
 .zb_checks{top:40px;}
 .class_checks .weui_check_label{ font-size:14px;}
 .class_checks .weui_check_label,.zb_checks .weui_check_label{ padding-left:2em;}

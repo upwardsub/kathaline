@@ -44,12 +44,6 @@ $(function(){
 		  });
 	  });    
  
- $(document).on("click", "#del-affirm", function() {
-        $.toast("删除成功");
-		$('.add-del_btnns').fadeIn();
-		$('.stus_del').fadeOut();
-		$('#button_sp_area').fadeOut();
-      }); 
 </script>
 <!--加减分-->
 <script>
@@ -106,7 +100,7 @@ $('.weui-number-plus').click(function(){
 
       <div class="weui_btn_primary weui-header z-ind1000"> 
           <div class="weui-header-left"> <a href="teacher_function.html" class="icon icon-shouye f20"><span class=" f15">首页</span></a>  </div>
-          <h1 class="weui-header-title"  onclick="selectmenu('1');">一年级（2）班<i id="cell_1" class="icon icon-zhankaijiantou mar_l5 f14 f-green"></i></h1>
+          <h1 class="weui-header-title"><a href="class_list.html" class="block">一年级（2）班<i id="cell_1" class="icon icon-zhankaijiantou mar_l5 f14 f-green"></i></a></h1>
            
       </div>
 
@@ -117,19 +111,14 @@ $('.weui-number-plus').click(function(){
         
         <div class="weui_uploader_bd">
          <ul class="weui_uploader_files left"  id='d3'>
-           <li class="weui_uploader_file tcenter p1 rel"><div class=" abs stus_del hide" onClick="$('.p1').fadeOut();" style="display:none;"><span class="weui-badge">-</span></div><img class="weui_media_appmsg_thumb circle border wh_40 center" src="../images/teacher_tx.jpg" alt=""><p class="f12 f-666 mar_t5">蔡友勋</p></li>               
-           <li class="weui_uploader_file tcenter p2 rel"><div class=" abs stus_del hide" onClick="$('.p2').fadeOut();"  style="display:none;"><span class="weui-badge">-</span></div><img class="weui_media_appmsg_thumb circle border wh_40 center" src="../images/teacher_tx.jpg" alt=""><p class="f12 f-666 mar_t5">蔡友勋222</p></li>               
+           <li class="weui_uploader_file tcenter p1 rel"><div class=" abs stus_del" onClick="$('.p1').fadeOut();"><span class="weui-badge">-</span></div><img class="weui_media_appmsg_thumb circle border wh_40 center" src="../images/teacher_tx.jpg" alt=""><p class="f12 f-666 mar_t5">蔡友勋</p></li>               
+           <li class="weui_uploader_file tcenter p2 rel"><div class=" abs stus_del" onClick="$('.p2').fadeOut();"><span class="weui-badge">-</span></div><img class="weui_media_appmsg_thumb circle border wh_40 center" src="../images/teacher_tx.jpg" alt=""><p class="f12 f-666 mar_t5">蔡友勋222</p></li>               
          </ul>
          <span class="add-del_btnns">
          <a class="weui_uploader_input_wrp f35 tcenter f45 f-999 add_btn" href="stus_list.html"></a>
-         <a class="weui_uploader_dele_wrp f35 tcenter f45 f-999 del_btn" href="javascript:" onclick="$('.stus_del').fadeIn(),$('#button_sp_area').fadeIn(),$('.add-del_btnns').fadeOut();"></a>
          </span>
        </div>
        </div>
-           <div class="button_sp_area page-bd mar_b15" id="button_sp_area" style="display:none;">
-              <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary bg-green mar_0" id="del-affirm">确认</a>
-              <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default mar_0" onclick="$('.add-del_btnns').fadeIn(),$('.stus_del').fadeOut(),$('#button_sp_area').fadeOut();">取消</a>
-          </div>
       </div>
       </div>
     <div class="weui_cells weui_cells_access">    
