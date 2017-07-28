@@ -265,3 +265,7 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
 .zwt_order_li a{ display:block; padding:5px 0; text-align:center; background:#fff; border-radius:6px; color:#535353; margin-bottom:5px; color:#28ce57 ; font-size:14px;}
 .zwt_order_li a:hover{background:#28ce57; color:#fff;}
 /* 报告书详情-0614新增-over */
+/*公告+查看*/
+.weui-header-right .icon .weui-reddot{ display:inline; padding-left:0; padding-right:0;}
+.line-clamp2{-webkit-line-clamp: 2!important;}
+.bg-ccc{ background:#ccc; color:#fff;}
