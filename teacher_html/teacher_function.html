@@ -11,90 +11,58 @@
 <link rel="stylesheet" href="../css/qky_grow.css"/>
 <link rel="stylesheet" type="text/css" href="../icon_font/iconfont.css"/>
 <script src="../js/zepto.min.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-	(function(){
-		var _btn  = document.querySelector(".btn-slide-bar"),
-			_body = document.querySelector("body");
-			_btn.onclick = function(){
-				_body.classList.toggle("active");
-			}
-	})(window)
-},false);
-</script>
 </head>
 
-<body ontouchstart>
-	<section class="slide-bar f14 f-white">
-       <div class="mar_tb15 pad_b15 upic_borb">
-         <div class="roles_pic weui_media_box weui_media_appmsg center">
-         <img class="weui_media_appmsg_thumb" src="../images/teacher_tx.jpg" alt="">
-         </div>
-         <p class="tcenter mar_tb10"><span class="mar_r15">王牧之</span>教师</p>
-       </div>
-	   <ul class="pad_tb10">
-			<li><a href="#" class="f-white"><span class="icon icon-iconfontyonghu1  middle mar_r10"></span>学生信息</a></li>
-			<li><a href="../qky-stus_roles.html" class="f-white"><span class="icon icon-qiehuan middle mar_r10"></span>切换身份</a></li>
-			<li><a href="#" class="f-white"><span class="icon icon-icon  middle mar_r10"></span>关于我们</a></li>
-			<li><a href="#" class="f-white"><span class="icon icon-weixin  middle mar_r10"></span>返回微信</a></li>
-	   </ul>
-	</section>
-
-      <div class="weui_btn_primary weui-header"> 
-          <div class="weui-header-left"> <a class="icon icon-list f20 btn-slide-bar"></a>  </div>
-          <h1 class="weui-header-title">功能首页</h1>
-          <div class="weui-header-right"><a href="annc-list.html" class="icon icon-xiaoxi f20"><span class="weui-reddot"></span></a>  </div>
+<body ontouchstart class="pad_t0">
+  <div class="user_bg monster-user po_r bg_white">
+    <div class="po_ab_l top_bg"></div>
+    <div class="weui-flex po_r">
+      <div class="placeholder mar_0"><a href="#" class="iconfont icon-tuichu co_ff fz_20 iblock f-white pad_t5 pad_r10 pad_l10"></a></div>
+      <div class="weui-flex-item"></div>
+      <div class="placeholder mar_0"><a href="#" class="iconfont icon-xiaoxi co_ff fz_20 iblock f-white po_r pad_t5 pad_r10 pad_l10"><span class="weui-reddot po_ab_r tip-badge"></span></a></div>
+    </div>
+    <div class="weui_media_box weui_media_appmsg po_r">
+      <div class="weui_media_hd po_r">
+        <div class="user-img radius-cirle"><img src="../images/teacher.jpg"></div>
+        <span class="role radius-cirle po_ab_r bg-orange f-white fz_12">教</span>
       </div>
-       <div class="weui_panel weui_panel_access mar_t12">
-            <div class="weui_panel_bd">
-                <a href="teacher_evaluate.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
-                    <div class="weui_media_hd">
-                        <span class="icon icon-27 f45 middle f-green"></span>
-                    </div>
-                    <div class="weui_media_bd">
-                        <h4 class="weui_media_title">学生评价</h4>
-                        <p class="weui_media_desc"><span>由学校发布的日常评价</span></p>
-                    </div>
-                </a>
-                <a href="teacher_health-list.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
-                    <div class="weui_media_hd">
-                        <span class="icon icon-jiankang f45 middle f-red"></span>
-                    </div>
-                    <div class="weui_media_bd">
-                        <h4 class="weui_media_title">体质健康</h4>
-                        <p class="weui_media_desc"><span>学生在校体育测试情况</span></p>
-                    </div>
-                </a>
-                <a href="teacher_honor-list.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
-                    <div class="weui_media_hd">
-                        <span class="icon icon-rongyu f45 middle f-orange"></span>
-                    </div>
-                    <div class="weui_media_bd">
-                        <h4 class="weui_media_title">个人荣誉</h4>
-                        <p class="weui_media_desc"><span>学生在校个人荣誉情况</span></p>
-                    </div>
-                </a>
-                <a href="teacher_reports.html" class="weui_panel_ft weui_media_box weui_media_appmsg">
-                    <div class="weui_media_hd">
-                        <span class="icon icon-plus-datareport f45 middle f-blue"></span>
-                    </div>
-                    <div class="weui_media_bd">
-                        <h4 class="weui_media_title">学期报告书</h4>
-                        <p class="weui_media_desc"><span>学生在校综合性报告书</span></p>
-                    </div>
-                </a>
-                <a href="" class="weui_panel_ft weui_media_box weui_media_appmsg">
-                    <div class="weui_media_hd">
-                        <span class="icon icon-27 f45 middle f-blue_b"></span>
-                    </div>
-                    <div class="weui_media_bd">
-                        <h4 class="weui_media_title">学生评价<span class="weui-badge bg-blue mar_l5">区域版</span></h4>
-                        <p class="weui_media_desc"><span>由区域机构下发的日常评价</span></p>
-                    </div>
-                </a>
-                
-            </div>
-        </div>    
+      <div class="weui_media_bd pad_l10">
+        <h4 class="weui_media_title fz_16"><span class="iblock middle f-white">迪丽热巴</span><a href="../qky-stus_roles.html" class="weui-badge bg_white f-green mar_l15"><i class="iconfont icon-shenfenqiehuan mr5"></i>切换身份</a></h4>
+        <p class="weui_media_desc pad_t10 f-666"><span>一年级（1）班</span><span class=" mar_l15">数学老师</span></p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="weui_cells mar_t12 pad_tb5 pad_lr10">
+     <div class="clear">
+       <a href="teacher_evaluate.html" class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-zonghepingjia fz_40 f-green"></i></div><p class="fz_12 f-black">日常评价</p></a>
+       <a class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-xueyechengji fz_40 f-blue"></i></div><p class="fz_12 f-black">学业成绩</p></a>
+       <a href="teacher_health-list.html" class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-jiankang fz_40 f-red"></i></div><p class="fz_12 f-black">体质健康</p></a>
+       <a href="teacher_honor-list.html" class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-rongyu fz_40 f-orange"></i></div><p class="fz_12 f-black">学生荣誉</p></a>
+       <a class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-huodong fz_40 f-blue_b"></i></div><p class="fz_12 f-black">实践活动</p></a>
+       <a class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-xueshengkaoqin fz_40 f-orange"></i></div><p class="fz_12 f-black">学生考勤</p></a>
+       <a href="teacher_reports.html" class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-baogao1 fz_40 f-green"></i></div><p class="fz_12 f-black">学期报告书</p></a>
+       <a class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-xueshengxieshi fz_40 f-blue"></i></div><p class="fz_12 f-black">学生写实</p></a>
+     </div>
+  </div>    
+  <div class="weui_cells_title bg-white mar_b0 pad_tb5">更多应用</div>
+  <div class="weui_cells pad_tb5 pad_lr10">
+     <div class="clear">
+       <a class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-banjipingjia fz_40 f-blue"></i></div><p class="fz_12 f-black">班级评价</p></a>
+       <a class="col-25 fl mar_tb10 t-center">
+          <div class="div-icon po_r">
+             <div class="po_ab_l">
+                <div class="tooltip top po_r">
+                   <div class="tooltip-arrow"></div>
+                   <span class="weui-badge fz_10">区域</span>
+                </div>
+             </div>
+             <i class="iconfont icon-zonghepingjia fz_40 f-green"></i></div><p class="fz_12 f-black">日常评价</p>
+       </a>
+       <a class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-dangan fz_40 f-blue_b"></i></div><p class="fz_12 f-black">成长档案袋</p></a>
+       <a class="col-25 fl mar_tb10 t-center"><div class="div-icon"><i class="iconfont icon-gengduoyingyong fz_40 f-gray"></i></div><p class="fz_12 f-black">开发中</p></a>
+     </div>
+  </div>    
            
 </body>
 </html>
