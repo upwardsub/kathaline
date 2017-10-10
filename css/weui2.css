@@ -333,6 +333,9 @@ a:active {
 .bg-blue {/*蓝色*/
   background-color: #68a0f4 !important;
 }
+.bg-dblue {/*深蓝色*/
+  background-color: #596c96 !important;
+}
 .bg-blue:not(.weui_btn_disabled):visited {
   color: #FFFFFF;
 }

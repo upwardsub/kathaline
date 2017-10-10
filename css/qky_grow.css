@@ -338,6 +338,7 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
 
 .weui_cells_title:before {top: 0;border-top: 1px solid #d9d9d9; -webkit-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scaleY(.5); transform: scaleY(.5); content: " "; position: absolute;left: 0;   right: 0; height: 1px; color: #d9d9d9;}
 .div-icon{ height:58px; line-height:58px;}
+.div-icon .icon-bg{ width:48px; height:48px; margin:0 auto; line-height:48px;}
 .tooltip { position: absolute; z-index: 1070; display: block;line-height: 1.42857143; padding:2px 0;}
 .tooltip-arrow { position: absolute; width: 0; height: 0; border-color: transparent; border-style: solid;}
 .tooltip.top .tooltip-arrow { bottom: 0; left: 33%;  margin-left: -5px;  border-width: 8px 5px 0;  border-top-color: #f43530;transform: rotate(15deg);}
