@@ -344,3 +344,12 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
 .tooltip.top .tooltip-arrow { bottom: 0; left: 33%;  margin-left: -5px;  border-width: 8px 5px 0;  border-top-color: #f43530;transform: rotate(15deg);}
 .weui-badge.fz_10{ line-height:14px; height:13px;}
 .div-icon.po_r .po_ab_l { left:50%; top:-5px; }
+
+/*学业成绩*/
+.pad_0{ padding:0 !important}
+.score-table{}
+.score-table th{ font-size:13px; text-align:left; padding:12px 0 10px; border-bottom:1px solid #f0f0f0; font-weight:normal;}
+.score-table td{ padding:8px 0; font-size:14px; vertical-align:text-top;}
+.score-table th:first-child,.score-table td:first-child{ padding-left:15px;}
+.score-table th:last-child,.score-table td:last-child{padding-right:15px;}
+.score-table tr:nth-of-type(even){ background:#f9f9f9;}

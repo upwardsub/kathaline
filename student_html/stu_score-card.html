@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>学生综合素质评价</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<link rel="icon" href="../qky.ico">
+<link rel="stylesheet" href="../css/weui.css"/>
+<link rel="stylesheet" href="../css/weui2.css"/>
+<link rel="stylesheet" href="../css/qky_grow.css"/>
+<link rel="stylesheet" type="text/css" href="../icon_font/iconfont.css"/>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/echarts.min.js"></script>
+</head>
+
+<body ontouchstart>
+	
+
+<div class="weui_btn_primary weui-header z-ind1000"> 
+    <div class="weui-header-left"> <a href="stu_score.html" class="icon icon-icon1 f20"></a>  </div>
+    <h1 class="weui-header-title">2016-2017学年上学期期末测试</h1>
+</div>
+
+<div class="weui_panel_bd">
+   <div class="weui_cells">
+      <div class="weui_cells_title"><span class="f-black fz_16">成绩单：</span><a  href="javascript:;" id="score-tips" class="fr"><u>图表说明</u></a></div>
+      <div class="weui_cell">
+          <div class="echart01" id="cla-radar"></div>
+      </div>
+   </div>        
+   <div class="weui_cells">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="score-table">
+        <tr class="f-blue">
+          <th width="41%" scope="col">科目</th>
+          <th width="17%" scope="col">得分</th>
+          <th width="20%" scope="col">班级均分</th>
+          <th width="22%" scope="col">年级均分</th>
+        </tr>
+        <tr>
+          <td>语文</td>
+          <td>89</td>
+          <td>80</td>
+          <td>79</td>
+        </tr>
+        <tr>
+          <td>数学</td>
+          <td>95</td>
+          <td>90</td>
+          <td>91</td>
+        </tr>
+        <tr>
+          <td>思想道德与品质</td>
+          <td>89</td>
+          <td>85</td>
+          <td>84</td>
+        </tr>
+        <tr>
+          <td>大数据分析挖掘技术</td>
+          <td>A</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>计算机科学技术</td>
+          <td>A</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>英语</td>
+          <td>88</td>
+          <td>80</td>
+          <td>84</td>
+        </tr>
+        <tr>
+          <td>体育</td>
+          <td>B</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>计算机科学技术</td>
+          <td>A</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>英语</td>
+          <td>88</td>
+          <td>80</td>
+          <td>84</td>
+        </tr>
+        <tr>
+          <td>体育</td>
+          <td>B</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </table>
+
+      
+   </div>        
+           
+</div>
+<div class="weui_mask"></div>
+<div class="weui_dialog ">
+  <div class="weui_dialog_bd t-left pad_0">
+  <!--
+    <p class="mar_b5 f-666">雷达图说明:</p>
+    <div class="f12">
+      <p class="mar_b5">以学生科目考试成绩在班级内领先学生百分比</p>
+      <p class="mar_b5">举例：班级学生总数M人，A学生数学排名N名次；百分比 Z</p>
+      <p class="mar_b5 f16 f-black">Z=（M-N）/M*100%</p>
+    </div>-->
+    
+    <div class="weui_panel_hd f-666">雷达图说明:</div>
+    <div class="weui_panel_bd f13">
+        <div class="weui_media_box weui_media_text pad_tb10">
+            <p class="mar_b5 f-666">以学生科目考试成绩在班级内领先学生百分比</p>
+            <p class="mar_b5 f-666">举例：班级学生总数M人，A学生数学排名N名次；百分比 Z</p>
+            <p class="mar_b5 f16 f-black">Z=（M-N）/M*100%</p>
+        </div>
+    </div>
+    <div class="weui_panel_hd f-666">成绩表说明:</div>
+    <div class="weui_panel_bd f13">
+        <div class="weui_media_box weui_media_text pad_tb10">
+            <p class="mar_b5 f-666">如科目成绩为等第制（A、B）形式，因特殊情况，暂不与班级评价分、年级平均分进行对比。</p>
+        </div>
+    </div>
+  </div>
+  <div class="weui_dialog_ft mar_t10" id="close"><a href="javascript:;" class="weui_btn_dialog primary">知道了</a></div>
+</div>
+<script>
+$(document).ready(function(){
+	$("#score-tips").click(function(){
+         $(".weui_mask").addClass("weui_mask_visible");
+         $(".weui_dialog").addClass("weui_dialog_visible");
+  });
+	$("#close").click(function(){
+         $(".weui_mask").removeClass("weui_mask_visible");
+         $(".weui_dialog").removeClass("weui_dialog_visible");
+  });
+});
+/*
+$(document).on("click", "#score-tips", function() {
+        $.modal({
+          title:"雷达图说明",
+          text: "以学生科目考试成绩在班级内领先学生百分比，\n举例：班级学生总数M人，A学生数学排名N名次；百分比 Z，Z=（M-N）/M*100%",
+          buttons: [
+            { text: "知道了", },
+          ]
+        });
+      });
+*/
+var radarChart = echarts.init(document.getElementById('cla-radar'));
+option = {
+    title: {
+        text: ''
+    },
+    backgroundColor: 'rgba(255,255,255,0)',
+    
+    tooltip: {},
+    radar: {
+        // shape: 'circle',
+        indicator: [
+           { name: '生物', max: 100},
+           { name: '数学', max: 100},
+           { name: '语文', max: 100},
+           { name: '英语', max: 100},           
+           { name: '生物', max: 100},
+           { name: '数学', max: 100},
+           { name: '语文', max: 100},
+           { name: '英语', max: 100},           
+        ],
+		center: ['50%', '51%'],
+    },
+    series: [{
+        name: '',
+        type: 'radar',
+        // areaStyle: {normal: {}},
+        itemStyle: {normal: {areaStyle: {type: 'default'}}},
+        data : [
+                {
+                value : [89, 56, 32, 66,50,67,89,90],
+                name : '百分比'
+				,itemStyle:{normal: {color:'#f0ad4e'}},
+            },
+        ]
+    }]
+};        // 使用刚指定的配置项和数据显示图表。
+        radarChart.setOption(option);
+</script>
+</body>
+</html>
