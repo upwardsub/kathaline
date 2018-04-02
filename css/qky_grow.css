@@ -109,7 +109,7 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
 .weui_uploader_bd .weui_uploader_file{ margin:0 9px 9px 0;}
 /*二级指标评价*/
 .page-bd li.rel:first-child{ margin-top:-1px !important;}
-.page-bd li .js-category.wid60{ width:60%; padding:10px 0 10px 1em;}
+.page-bd li .js-category.wid60{ /*width:60%;**201804*/ padding:10px 0 10px 1em;}
 .page-bd li .l28{ height:28px; line-height:28px;}
 .page-bd li.rel .weui_cell .weui_cell_ft{right:10px;}
 
@@ -353,3 +353,15 @@ input, textarea, keygen, select, button{font-family:-apple-system-font,"Helvetic
 .score-table th:first-child,.score-table td:first-child{ padding-left:15px;}
 .score-table th:last-child,.score-table td:last-child{padding-right:15px;}
 .score-table tr:nth-of-type(even){ background:#f9f9f9;}
+
+/*二级指标字符样式201804*/
+.quota-2{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+@media screen and ( max-width: 320px ) {
+.quota-2{ max-width:156px;}
+}
+@media ( min-width: 321px ) and ( max-width: 375px ) {
+.quota-2{ max-width:210px;}
+}
+@media ( min-width: 376px ) and ( max-width: 414px ) {
+.quota-2{ max-width:248px;}
+}
